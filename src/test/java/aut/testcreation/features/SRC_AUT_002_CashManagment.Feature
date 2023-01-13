@@ -7,11 +7,25 @@ Feature: Conjunto de Test para validar el funcionamiento correcto de los flujos 
   Scenario Outline: <Escenario>
     When El Usuario crea un Tipo de Beneficiario <TipoBeneficiario> con los datos <Datos>
     And El Usuario confirma sus datos de autenticación con los datos "pContrasenia" y "pToken"
-    Then Se le muestra al Usuario la creación exitosa del Beneficiario "pResultadoEsperado"
+    Then El Sistema muestra la creación exitosa del Beneficiario "pResultadoEsperado"
     Examples:
-      | Escenario                                | TipoBeneficiario             | Datos                                                                                                                                 |
-      | SC_002_01_altaBeneficiarioPagoDeFactura  | Pago de Servicios y Facturas | "pAlias" y "pNumCliente"                                                                                                              |
-      | SC_002_02_altaBeneficiarioPagoDeFactura2 | Pago de Servicios y Facturas | "pAlias" y "pNumCliente"                                                                                                              |
-      | SC_002_03_altaBeneficiarioPersonaMoral   | Persona Moral                | "pNombrePerfil", "pTipoCuenta", "pNumCuenta", "pNumIdentificacion" y "pLimiteAbono"                                                   |
-      | SC_002_04_altaBeneficiarioPersonaMoral2  | Persona Moral                | "pNombrePerfil", "pTipoCuenta", "pNumCuenta", "pNumIdentificacion" y "pLimiteAbono"                                                   |
-      | SC_002_05_altaBeneficiarioPersonaFisica  | Persona Física               | "pNombrePerfil", "pTipoBanco", "pNumCuenta", "pNumIdentificacion", "pNombre", "pAoellidoPaterno", "pApellidoMaterno" y "pLimiteAbono" |
+      | Escenario                                                     | TipoBeneficiario               | Datos                                                                                                                                  |
+      | TC_002_01_altaBeneficiarioPagoDeFacturaConNumCliente          | Pago de Servicios y Facturas   | "pAlias" y "pNumCliente"                                                                                                               |
+      | TC_002_02_altaBeneficiarioPagoDeFacturaSinNumCliente          | Pago de Servicios y Facturas   | "pAlias" y "pNumCliente"                                                                                                               |
+      | TC_002_03_altaBeneficiarioPersonaMoralOtroBanco               | Persona Moral                  | "pNombrePerfil", "pTipoCuenta", "pNumCuenta", "pNumIdentificacion" y "pLimiteAbono"                                                    |
+      | TC_002_04_altaBeneficiarioPersonaMoralScotiabank              | Persona Moral                  | "pNombrePerfil", "pTipoCuenta", "pNumCuenta", "pNumIdentificacion" y "pLimiteAbono"                                                    |
+      | TC_002_05_altaBeneficiarioPersonaFisicaOtroBanco              | Persona Física                 | "pNombrePerfil", "pTipoCuenta", "pNumCuenta", "pNumIdentificacion", "pNombre", "pAoellidoPaterno", "pApellidoMaterno" y "pLimiteAbono" |
+      | TC_002_06_altaBeneficiarioPersonaFisicaScotiabank             | Persona Física                 | "pNombrePerfil", "pTipoCuenta", "pNumCuenta" y "pLimiteAbono"                                                                          |
+      | TC_002_07_altaBeneficiarioContribucionesGubernamentalesEstado | Contribuciones Gubernamentales | "pTipoImpuesto"                                                                                                                        |
+      | TC_002_08_altaBeneficiarioContribucionesGubernamentalesCiudad | Contribuciones Gubernamentales | "pTipoImpuesto"                                                                                                                        |
+      | TC_002_09_altaBeneficiarioContribucionesFederalesSAT          | Contribuciones Federales       | "pTipoImpuesto"                                                                                                                        |
+      | TC_002_10_altaBeneficiarioContribucionesFederalesDerechos     | Contribuciones Federales       | "pTipoImpuesto"                                                                                                                        |
+
+  Scenario Outline: <Escenario>
+    When El Usuario paga una Factura con los datos <Datos>
+    And El Usuario confirma sus datos de autenticación con los datos "pContrasenia" y "pToken"
+    Then El Sistema muestra el pago exitoso de la Factura
+    Examples:
+      | Escenario                            | Datos      |
+      | TC_002_11_pagoDeFactura              |            |
+      | TC_002_12_pagoDeFacturaConNumCliente | "pImporte" |
