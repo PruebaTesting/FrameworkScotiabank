@@ -28,7 +28,7 @@ import java.util.Properties;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"pretty", "io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"},
         glue = {"aut.testcreation.steps","framework.engine.bdd"},
-        tags = {"@fast", "@pruebas"},
+        tags = {""},
         features = {"src/test/java/aut/testcreation/features"})
 @CommonsLog
 public class CucumberBaseTestRunner {
@@ -47,6 +47,7 @@ public class CucumberBaseTestRunner {
     public static void setUp(Scenario pEscenario) throws IOException, InvalidFormatException {
         properties = LoadProperties.loadProperties();
         LoadProperties.getEscenario(pEscenario.getName());
+        System.out.println("Entra acá");
         webDriverSetup();
     }
 
