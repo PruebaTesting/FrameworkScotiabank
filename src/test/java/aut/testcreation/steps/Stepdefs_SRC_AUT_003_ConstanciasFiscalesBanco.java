@@ -10,7 +10,6 @@ public class Stepdefs_SRC_AUT_003_ConstanciasFiscalesBanco extends CucumberBaseT
             Login.FuncionUsuario(pIdioma);
         });
         When("El Usuario selecciona el Rol {string}", (String Rol) -> {
-            //System.out.println(Rol);
             switch (Rol){
                 case "Bank Client":
                     //Rol.funcionRol(Rol);
@@ -22,8 +21,12 @@ public class Stepdefs_SRC_AUT_003_ConstanciasFiscalesBanco extends CucumberBaseT
                     //Rol.funcionRol(Rol);
                     break;
                 case "MexDer":
+                    //Rol.funcionRol(Rol);
                     break;
-                case "otros":
+                case "Premiado":
+                    break;
+                case "Proveedor":
+                    //Rol.funcionRol(Rol);
                     break;
             }
         });

@@ -20,11 +20,14 @@ Feature:
     |SC_003_11_ConsultaYDescargaPremiadoIngles            |Ingles |Premiado             |"pClaveIdentificador&pCorreo&pRFC&pEjercicio"|
     |SC_003_12_ConsultaYDescargaPremiadoEspañol           |Español|Premiado             |"pClaveIdentificador&pCorreo&pRFC&pEjercicio"|
     |SC_003_13_ConsultaYDescargaClienteBancoIngles        |Ingles |Bank Client          |"pNumCliente&pContrasenia"                   |
-    |SC_003_14_ConsultaYDescargaClienteBancoEspañol       |Español|                     |                           |
-    |SC_003_15_                                           |       |                     |                           |
-    |SC_003_12_                                           |       |                     |                           |
-    |SC_003_16_                                           |       |                     |                           |
-    |SC_003_17_                                           |       |                     |                           |
-    |SC_003_18_                                           |       |                     |                           |
-    |SC_003_19_                                           |       |                     |                           |
-    |SC_003_20_                                           |       |                     |                           |
+    |SC_003_14_ConsultaYDescargaClienteBancoEspañol       |Español|Cliente banco        |"pNumCliente&pContrasenia"                   |
+    |SC_003_15_ConsultaYDescargaClienteCasaDeBolsaIngles  |Ingles |Cliente Casa de Bolsa|"pNumContrato&pContrasenia"                  |
+    |SC_003_16_ConsultaYDescargaClienteCasaDeBolsaEspañol |Español|Cliente Casa de Bolsa|"pNumContrato&pContrasenia"                  |
+    |SC_003_17_ConsultaYDescargaClienteMexderIngles       |Ingles |MexDer               |"pNumContrato&pContrasenia"                  |
+    |SC_003_18_ConsultaYDescargaClienteMexderEspañol      |Español|MexDer               |"pNumContrato&pContrasenia"                  |
+    |SC_003_19_ConsultaYDescargaClienteOTCIngles          |Ingles |MexDer               |"pNumCliente&pContrasenia"                   |
+    |SC_003_20_ConsultaYDescargaOTCEspañol                |Español|MexDer               |"pNumCliente&pContrasenia"                   |
+    |SC_003_21_ConsultaYDescargaProveedorInglesExtranjero |Ingles |Proveedor            |"pNumCuentaBancaria"                         |
+    |SC_003_22_ConsultaYDescargaProveedorEspañolExtranjero|Español|Proveedor            |"pNumCuentaBancaria"                         |
+    |SC_003_23_ConsultaYDescargaPremiadoIngles            |Ingles |Premiado             |"pClaveIdentificador&pCorreo&pRFC&pEjercicio"|
+    |SC_003_24_ConsultaYDescargaPremiadoEspañol           |Español|Premiado             |"pClaveIdentificador&pCorreo&pRFC&pEjercicio"|
