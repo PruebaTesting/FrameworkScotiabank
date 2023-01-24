@@ -29,7 +29,6 @@ public class Stepdefs_SRC_AUT_003_ConstanciasFiscalesBanco extends CucumberBaseT
         });
         And("El Usuario ingresa los datos requeridos para descargar la constancia {string}", (String pDatos) -> {
             String[] lDatos = pDatos.split("&");
-            //System.out.println(pDatos);
 
             switch (pDatos){
                 case "pNumCliente&pContrasenia":
