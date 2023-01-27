@@ -17,14 +17,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
 
-    // @BeforeEach
-    // Puede haber problemas con los numeros
-/*void before(){
-        Login.correcto("pUsuario", "pContrasenia", "pToken");
-    }*/
-
-    //  "TC_002_02_altaBeneficiarioPagoDeFacturaSinNumCliente"
-
     @Nested
     @DisplayName("Creacion de beneficiarios")
     class CreacionBeneficiarios {
@@ -38,24 +30,36 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
             CrearBeneficiario.pagoDeServiciosYFacturas("pAlias", "pNumCliente");
         }
 
-        @ParameterizedTest
+        @Test
         @Tag("fast")
-        @CsvSource({"TC_002_03_altaBeneficiarioPersonaMoralOtroBanco",
-                "TC_002_04_altaBeneficiarioPersonaMoralScotiabank"})
-        void TC_002_03y04_test(String methodName) throws IOException, InvalidFormatException, AWTException {
-            getTestName(methodName);
+        void TC_002_03_altaBeneficiarioPersonaMoralOtroBanco() throws IOException, InvalidFormatException, AWTException {
+            getTestName(getMethodName());
             Login.correcto("pUsuario", "pContrasenia", "pToken");
-            CrearBeneficiario.personaMoral("pNombrePerfil", "pTipoCuenta", "pNumCuenta", "pNumIdentificacion", "pNombreRazonSocial", "pEmail", "pNumTelefono", "pLimiteAbono");
+            CrearBeneficiario.personaMoralOtroBanco("pNombrePerfil", "pNumCuenta", "pNumIdentificacion", "pNombreRazonSocial", "pEmail", "pNumTelefono", "pLimiteAbono");
         }
 
-        @ParameterizedTest
+        @Test
         @Tag("fast")
-        @CsvSource({"TC_002_05_altaBeneficiarioPersonaFisicaOtroBanco",
-                "TC_002_06_altaBeneficiarioPersonaFisicaScotiabank"})
-        void TC_002_05_altaBeneficiarioPersonaFisicaOtroBanco(String methodName) throws IOException, InvalidFormatException, AWTException {
-            getTestName(methodName);
+        void TC_002_04_altaBeneficiarioPersonaMoralScotiabank() throws IOException, InvalidFormatException, AWTException {
+            getTestName(getMethodName());
             Login.correcto("pUsuario", "pContrasenia", "pToken");
-            CrearBeneficiario.personaFisica("pNombrePerfil", "pTipoCuenta", "pNumCuenta", "pAlias", "pNumIdentificacion", "pNombre", "pAoellidoPaterno", "pApellidoMaterno", "pLimiteAbono");
+            CrearBeneficiario.personaMoralScotiabank("pNombrePerfil", "pAlias", "pEmail", "pNumTelefono", "pLimiteAbono");
+        }
+
+        @Test
+        @Tag("fast")
+        void TC_002_05_altaBeneficiarioPersonaFisicaOtroBanco() throws IOException, InvalidFormatException, AWTException {
+            getTestName(getMethodName());
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            CrearBeneficiario.personaFisicaOtroBanco("pNombrePerfil", "pNumCuenta", "pAlias", "pNumIdentificacion", "pNombre", "pApellidoPaterno", "pApellidoMaterno", "pEmail", "pNUmeroTelefono", "pLimiteAbono");
+        }
+
+        @Test
+        @Tag("fast")
+        void TC_002_06_altaBeneficiarioPersonaFisicaScotiabank() throws IOException, InvalidFormatException, AWTException {
+            getTestName(getMethodName());
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            CrearBeneficiario.personaFisicaOtroBanco("pNombrePerfil", "pNumCuenta", "pAlias", "pEmail", "pNUmeroTelefono", "pLimiteAbono");
         }
 
         @ParameterizedTest
@@ -113,24 +117,36 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
             Pago.CIPARE("pRegistroPatronal", "pPeriodo");
         }
 
-        @ParameterizedTest
-        @Tag("fast")
-        @CsvSource({"TC_002_15_pagoContribucionesGubernamentalesEstado",
-                "TC_002_16_pagoContribucionesGubernamentalesCiudad"})
-        void TC_002_15y16_test(String methodName) throws IOException, InvalidFormatException, AWTException {
-            getTestName(methodName);
+        @Test
+        @Tag("slow")
+        void TC_002_15_pagoContribucionesGubernamentalesEstado() throws IOException, InvalidFormatException, AWTException {
+            getTestName(getMethodName());
             Login.correcto("pUsuario", "pContrasenia", "pToken");
-            Pago.contribucionesGubernamentales("pLineaCaptura", "pImporte", "pFechaLimitePago");
+            Pago.contribucionesGubernamentalesEstado("pLineaCaptura", "pImporte", "pFechaLimitePago");
         }
 
-        @ParameterizedTest
-        @Tag("fast")
-        @CsvSource({"TC_002_17_pagoContribucionesFederalesDerechos",
-                "TC_002_18_pagoContribucionesFederalesSAT"})
-        void TC_002_17y18_test(String methodName) throws IOException, InvalidFormatException, AWTException {
-            getTestName(methodName);
+        @Test
+        @Tag("slow")
+        void TC_002_16_pagoContribucionesGubernamentalesCiudad() throws IOException, InvalidFormatException, AWTException {
+            getTestName(getMethodName());
             Login.correcto("pUsuario", "pContrasenia", "pToken");
-            Pago.contribucionesFederales("pRFC", "pRazonSocial", "pDependenciaYEntidades", "pPeriodicidad", "pEjercicio", "pPeriodo", "pClaveReferenciaDPA", "pCadenaDependencia", "pImporte", "pLineaCaptura");
+            Pago.contribucionesGubernamentalesCiudad("pLineaCaptura", "pImporte");
+        }
+
+        @Test
+        @Tag("slow")
+        void TC_002_17_pagoContribucionesFederalesDerechos() throws IOException, InvalidFormatException, AWTException {
+            getTestName(getMethodName());
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Pago.contribucionesFederalesDerechos("pRFC", "pRazonSocial", "pDependenciaYEntidades", "pPeriodicidad", "pEjercicio", "pPeriodo", "pClaveReferenciaDPA", "pCadenaDependencia", "pImporte");
+        }
+
+        @Test
+        @Tag("slow")
+        void TC_002_18_pagoContribucionesFederalesSAT() throws IOException, InvalidFormatException, AWTException {
+            getTestName(getMethodName());
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Pago.contribucionesFederalesSAT("pImporte", "pLineaCaptura");
         }
 
         @ParameterizedTest
@@ -146,33 +162,21 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
         @ParameterizedTest
         @Tag("fast")
         @CsvSource({"TC_002_21_pagoProveedoresPersonaMoralOtroBanco",
-                "TC_002_22_pagoProveedoresPersonaMoralScotiabank",
-                "TC_002_23_pagoProveedoresPersonaFisicaOtroBanco",
-                "TC_002_24_pagoProveedoresPersonaFisicaScotiabank"})
-        void TC_002_21y22_test(String methodName) throws IOException, InvalidFormatException, AWTException {
-            getTestName(methodName);
-            Login.correcto("pUsuario", "pContrasenia", "pToken");
-            Pago.proveedores("pImporte", "pReferenciaNumerica", "pConcepto", "pIVA", "pReferenciaAlfanumerica", "pReferenciaEmpresa");
-        }
-
-        @ParameterizedTest
-        @Tag("fast")
-        @CsvSource({"TC_002_21_pagoProveedoresPersonaMoralOtroBanco",
                 "TC_002_23_pagoProveedoresPersonaFisicaOtroBanco"})
         void TC_002_21y23_test(String methodName) throws IOException, InvalidFormatException, AWTException {
             getTestName(methodName);
             Login.correcto("pUsuario", "pContrasenia", "pToken");
-            Pago.proveedoresOtroBanco();
+            Pago.proveedoresOtroBanco("pTipoBeneficiario", "pImporte", "pReferenciaNumerica", "pConcepto", "pIVA");
         }
 
         @ParameterizedTest
         @Tag("fast")
-        @CsvSource({"TC_002_23_pagoProveedoresPersonaFisicaOtroBanco",
+        @CsvSource({"TC_002_22_pagoProveedoresPersonaMoralScotiabank",
                 "TC_002_24_pagoProveedoresPersonaFisicaScotiabank"})
-        void TC_002_23y24_test(String methodName) throws IOException, InvalidFormatException, AWTException {
+        void TC_002_21y23_test(String methodName) throws IOException, InvalidFormatException, AWTException {
             getTestName(methodName);
             Login.correcto("pUsuario", "pContrasenia", "pToken");
-
+            Pago.proveedoresScotiabank("pTipoBeneficiario", "pImporte", "pReferenciaNumerica", "pIVA", "pReferenciaAlfanumerica", "pReferenciaEmpresa");
         }
 
         @ParameterizedTest
