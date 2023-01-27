@@ -37,7 +37,7 @@ public class CrearBeneficiario extends SeleniumWrapper {
         System.out.println("CrearBeneficiario.personaFisica");
     }
 
-    public static void contribucionesGubernamentales(String pTipoImpuesto) throws IOException, InvalidFormatException, AWTException {
+    public static void contribucionesGubernamentales(String pTipoImpuesto, String pAlias) throws IOException, InvalidFormatException, AWTException {
         System.out.println("CrearBeneficiario.contribucionesGubernamentales");
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
@@ -51,7 +51,7 @@ public class CrearBeneficiario extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
     }
 
-    public static void contribucionesFederales() {
+    public static void contribucionesFederales(String pTipoImpuesto, String pAlias) {
         System.out.println("CrearBeneficiario.contribucionesFederales");
     }
 
