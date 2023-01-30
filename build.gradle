@@ -111,10 +111,12 @@ dependencies {
 }
 
 task tagsTest(type: Test) {
-    String itags = System.getProperty("includeTags") ?
+    /*String itags = System.getProperty("includeTags") ?
             System.getProperty("includeTags") : 'non-existent'
     String etags = System.getProperty("excludeTags") ?
-            System.getProperty("excludeTags") : 'non-existent'
+            System.getProperty("excludeTags") : 'non-existent'*/
+    String itags = "slow"
+    String etags = "fast"
 
     useJUnitPlatform {
         includeTags itags

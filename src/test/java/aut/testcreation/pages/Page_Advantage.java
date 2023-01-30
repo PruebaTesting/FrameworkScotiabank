@@ -16,4 +16,6 @@ public class Page_Advantage {
     public static By cbxIAgree = By.name("i_agree");
     public static By btnRegister = By.id("register_btnundefined");
     public static By lblMessageRegister = By.xpath("//div[@class='center']/label[1]");
+
+    public static By btnEjemplo = By.id("ejemplo");
 }
