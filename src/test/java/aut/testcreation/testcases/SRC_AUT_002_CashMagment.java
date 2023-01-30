@@ -217,7 +217,7 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
         void TC_002_33y34_test(String methodName) throws IOException, InvalidFormatException, AWTException {
             getTestName(methodName);
             Login.correcto("pUsuario", "pContrasenia", "pToken");
-            Administrar.administrarAprobacion(); //Pensar un mejor nombre en vez de ".administrar"
+            Administrar.administrarAprobacion("pAccion"); //Pensar un mejor nombre en vez de ".administrar"
         }
 
         @ParameterizedTest
@@ -251,7 +251,7 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
         }
 
         @AfterEach
-        void afterPagoFacturas() {
+        void afterVisualizacionDetalles() {
             assertTrue(Comprobar.visualizacionDetalles("pResultadoEsperado"));
         }
     }

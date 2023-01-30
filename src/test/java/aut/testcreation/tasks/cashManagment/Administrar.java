@@ -13,7 +13,7 @@ public class Administrar extends SeleniumWrapper {
         System.out.println("Administrar.verDetallesUsuario");
     }
 
-    public static void administrarAprobacion() {
+    public static void administrarAprobacion(String pAccion) {
         System.out.println("Administrar.administrarAprobacion");
     }
 
