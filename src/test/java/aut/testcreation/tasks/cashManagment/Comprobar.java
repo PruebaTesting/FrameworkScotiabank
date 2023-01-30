@@ -25,4 +25,14 @@ public class Comprobar extends SeleniumWrapper {
         return true;
     }
 
+    public static boolean visualizacionDetalles(String pResultadoEsperado) {
+        System.out.println("Comprobar.visualizacionDetalles");
+        return true;
+    }
+
+    public static boolean formatoDescarga() {
+        System.out.println("Comrobar.formatoDescarga");
+        return true;
+    }
+
 }

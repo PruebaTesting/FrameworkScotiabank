@@ -28,8 +28,34 @@ public class Pago extends SeleniumWrapper {
         System.out.println("Pago.contribucionesFederales");
     }
 
-    public static void nomina(String pImporte, String pReferenciaNumerica, String pConcepto) {
+    public static void nomina(String pImporte, String pReferenciaNumerica, String pConcepto, String pReferenciaAlfanumerica, String pReferenciaEmpresa) {
         System.out.println("Pago.nomina");
     }
+
+    public static void contribucionesGubernamentalesEstado(String pLineaCaptura, String pImporte, String pFechaLimitePago) {
+        System.out.println("Pago.contribucionesGubernamentalesEstado");
+    }
+
+    public static void contribucionesGubernamentalesCiudad(String pLineaCaptura, String pImporte) {
+        System.out.println("Pago.contribucionesGubernamentalesCiudad");
+    }
+
+    public static void contribucionesFederalesDerechos(String pRFC, String pRazonSocial, String pDependenciaYEntidades, String pPeriodicidad, String pEjercicio, String pPeriodo, String pClaveReferenciaDPA, String pCadenaDependencia, String pImporte) {
+        System.out.println("Pago.contribucionesFederalesDerechos");
+    }
+
+    public static void contribucionesFederalesSAT(String pImporte, String pLineaCaptura) {
+        System.out.println("Pago.contribucionesFederalesSAT");
+    }
+
+    public static void proveedoresOtroBanco(String pTipoBeneficiario, String pImporte, String pReferenciaNumerica, String pConcepto, String pIVA) {
+        System.out.println("Pago.proveedoresOtroBanco");
+    }
+
+    public static void proveedoresScotiabank(String pTipoBeneficiario, String pImporte, String pReferenciaNumerica, String pIVA, String pReferenciaAlfanumerica, String pReferenciaEmpresa) {
+        System.out.println("Pago.proveedoresScotiabank");
+    }
+
+
 
 }

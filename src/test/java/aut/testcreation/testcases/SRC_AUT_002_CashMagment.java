@@ -1,9 +1,6 @@
 package aut.testcreation.testcases;
 
-import aut.testcreation.tasks.cashManagment.Comprobar;
-import aut.testcreation.tasks.cashManagment.CrearBeneficiario;
-import aut.testcreation.tasks.cashManagment.Login;
-import aut.testcreation.tasks.cashManagment.Pago;
+import aut.testcreation.tasks.cashManagment.*;
 import framework.engine.selenium.SeleniumTestBase;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.junit.jupiter.api.*;
@@ -35,7 +32,7 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
         void TC_002_03_altaBeneficiarioPersonaMoralOtroBanco() throws IOException, InvalidFormatException, AWTException {
             getTestName(getMethodName());
             Login.correcto("pUsuario", "pContrasenia", "pToken");
-            CrearBeneficiario.personaMoralOtroBanco("pNombrePerfil", "pNumCuenta", "pNumIdentificacion", "pNombreRazonSocial", "pEmail", "pNumTelefono", "pLimiteAbono");
+            CrearBeneficiario.personaMoralOtroBanco("pNombrePerfil", "pNumeroCuenta", "pNumeroIdentificacion", "pNombreRazonSocial", "pEmail", "pNumeroTelefono", "pLimiteAbono");
         }
 
         @Test
@@ -51,7 +48,7 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
         void TC_002_05_altaBeneficiarioPersonaFisicaOtroBanco() throws IOException, InvalidFormatException, AWTException {
             getTestName(getMethodName());
             Login.correcto("pUsuario", "pContrasenia", "pToken");
-            CrearBeneficiario.personaFisicaOtroBanco("pNombrePerfil", "pNumCuenta", "pAlias", "pNumIdentificacion", "pNombre", "pApellidoPaterno", "pApellidoMaterno", "pEmail", "pNUmeroTelefono", "pLimiteAbono");
+            CrearBeneficiario.personaFisicaOtroBanco("pNombrePerfil", "pNumCuenta", "pAlias", "pNumIdentificacion", "pNombre", "pApellidoPaterno", "pApellidoMaterno", "pEmail", "pNumeroTelefono", "pLimiteAbono");
         }
 
         @Test
@@ -59,7 +56,7 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
         void TC_002_06_altaBeneficiarioPersonaFisicaScotiabank() throws IOException, InvalidFormatException, AWTException {
             getTestName(getMethodName());
             Login.correcto("pUsuario", "pContrasenia", "pToken");
-            CrearBeneficiario.personaFisicaOtroBanco("pNombrePerfil", "pNumCuenta", "pAlias", "pEmail", "pNUmeroTelefono", "pLimiteAbono");
+            CrearBeneficiario.personaFisicaScotiabank("pNombrePerfil", "pNumCuenta", "pAlias", "pEmail", "pNUmeroTelefono", "pLimiteAbono");
         }
 
         @ParameterizedTest
@@ -90,6 +87,7 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
     }
 
     @Nested
+    @DisplayName("Pagos")
     class Pagos {
         @Test
         @Tag("fast")
@@ -173,7 +171,7 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
         @Tag("fast")
         @CsvSource({"TC_002_22_pagoProveedoresPersonaMoralScotiabank",
                 "TC_002_24_pagoProveedoresPersonaFisicaScotiabank"})
-        void TC_002_21y23_test(String methodName) throws IOException, InvalidFormatException, AWTException {
+        void TC_002_22y24_test(String methodName) throws IOException, InvalidFormatException, AWTException {
             getTestName(methodName);
             Login.correcto("pUsuario", "pContrasenia", "pToken");
             Pago.proveedoresScotiabank("pTipoBeneficiario", "pImporte", "pReferenciaNumerica", "pIVA", "pReferenciaAlfanumerica", "pReferenciaEmpresa");
@@ -190,7 +188,7 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
         void TC_002_25a30_test(String methodName) throws IOException, InvalidFormatException, AWTException {
             getTestName(methodName);
             Login.correcto("pUsuario", "pContrasenia", "pToken");
-            Transferencia.origenADestino("pProductoOrigen", "pProductoDestino", "pImporte", "pReferenciaEmpresa", "pReferenciaNumerica", "pReferenciaAlfanumerica", "");
+            Transferencia.origenADestino("pProductoOrigen", "pProductoDestino", "pImporte", "pReferenciaEmpresa", "pReferenciaNumerica", "pReferenciaAlfanumerica", "...");
         }
 
         @AfterEach
@@ -253,13 +251,14 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
         }
 
         @AfterEach
-        void afterPagoFacturas() throws IOException, InvalidFormatException, AWTException {
+        void afterPagoFacturas() {
             assertTrue(Comprobar.visualizacionDetalles("pResultadoEsperado"));
         }
     }
 
     @Nested
-    class VisualizacionDetalles {
+    @DisplayName("Consultas")
+    class Consultas {
 
         @ParameterizedTest
         @Tag("fast")
@@ -273,7 +272,7 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
 
         @Test
         @Tag("fast")
-        void TC_002_43_administradorConsultaPrestamosPersonales() throws IOException {
+        void TC_002_43_administradorConsultaPrestamosPersonales() throws IOException, InvalidFormatException, AWTException {
             getTestName(getMethodName());
             Login.correcto("pUsuario", "pContrasenia", "pToken");
             Administrar.consultarPrestamosPersonales("pContrasenia", "pToken");
@@ -310,7 +309,7 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
         }
 
         @AfterEach
-        void afterPagoFacturas() throws IOException, InvalidFormatException, AWTException {
+        void afterConsultas() {
             assertTrue(Comprobar.formatoDescarga());
         }
     }
