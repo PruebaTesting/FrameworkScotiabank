@@ -1,6 +1,7 @@
 package aut.testcreation.tasks.scotiabank;
 
 import framework.engine.selenium.SeleniumWrapper;
+import framework.engine.utils.ExcelReader;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 
@@ -15,9 +16,9 @@ public class Datos extends SeleniumWrapper {
         super(driver);
     }
 
-    public static void IngresarDatos(String pDato, String pDato2) throws IOException, InvalidFormatException, AWTException {
-        escribirEnInput(XXX, pDato);
-        escribirEnInput(XXX, pDato);
+    public static void IngresarDatos(String pNumeroDeContrato, String pContrasenia) throws IOException, InvalidFormatException, AWTException {
+        escribirEnInput(XXX, ExcelReader.extractDataToExcel(pNumeroDeContrato));
+        escribirEnInput(XXX, ExcelReader.extractDataToExcel(pContrasenia));
         clickear(XXX); //cbx no soy un robot
         reporte.reportarEvento("", true, false);
         clickear(XXX); //btn ok
