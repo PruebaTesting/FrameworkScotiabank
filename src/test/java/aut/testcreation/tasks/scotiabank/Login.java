@@ -6,6 +6,10 @@ import org.openqa.selenium.WebDriver;
 import java.awt.*;
 import java.io.IOException;
 import static aut.testcreation.pages.Page_Scotiabank.XXX;
+import java.awt.*;
+import java.io.IOException;
+import static aut.testcreation.pages.Page_Scotiabank.*;
+import static framework.engine.selenium.ReportFunctionalities.reporte;
 
 public class Login extends SeleniumWrapper {
     public Login(WebDriver driver) {
@@ -27,5 +31,10 @@ public class Login extends SeleniumWrapper {
         clickear(XXX); //click boton-Entrar
         clickear(XXX); // click en botón-CambioContraseña
         clickear(XXX); // click boton-aceptar (sin capturar num. de usuario)
+
+    public static void FuncionUsuario(String pIdioma) throws IOException, InvalidFormatException, AWTException {
+        navegarURL("");
+        seleccionarOpcionPorTexto(XXX, pIdioma);
+        reporte.reportarEvento("", true, false);
     }
 }
