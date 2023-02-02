@@ -15,7 +15,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
 
     @Test
     void TC_005_01_ConsultaYDescargaClienteBancoIngles() throws IOException, InvalidFormatException, AWTException {
-
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
@@ -25,6 +25,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
     }
     @Test
     void TC_005_02_ConsultaYDescargaClienteBancoEspañol() throws IOException, InvalidFormatException, AWTException{
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
@@ -33,6 +34,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
     }
     @Test
     void TC_005_03_ConsultaYDescargaClienteCasaDeBolsaIngles() throws IOException, InvalidFormatException, AWTException{
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
@@ -41,6 +43,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
     }
     @Test
     void TC_005_04_ConsultaYDescargaClienteCasaDeBolsaEspañol() throws IOException, InvalidFormatException, AWTException{
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
@@ -49,6 +52,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
     }
     @Test
     void TC_005_05_ConsultaYDescargaClienteMexderIngles() throws IOException, InvalidFormatException, AWTException{
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
@@ -57,6 +61,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
     }
     @Test
     void TC_005_06_ConsultaYDescargaClienteMexderEspañol() throws IOException, InvalidFormatException, AWTException{
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
@@ -65,6 +70,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
     }
     @Test
     void TC_005_07_ConsultaYDescargaClienteOTCIngles() throws IOException, InvalidFormatException, AWTException{
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
@@ -73,6 +79,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
     }
     @Test
     void TC_005_08_ConsultaYDescargaOTCEspañol() throws IOException, InvalidFormatException, AWTException{
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
@@ -81,6 +88,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
     }
     @Test
     void TC_005_09_ConsultaYDescargaProveedorInglesExtranjero() throws IOException, InvalidFormatException, AWTException{
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
@@ -89,6 +97,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
     }
     @Test
     void TC_005_10_ConsultaYDescargaProveedorEspañolExtranjero() throws IOException, InvalidFormatException, AWTException{
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
@@ -97,6 +106,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
     }
     @Test
     void TC_005_11_ConsultaYDescargaPremiadoIngles() throws IOException, InvalidFormatException, AWTException{
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
@@ -105,6 +115,7 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
     }
     @Test
     void TC_005_12_ConsultaYDescargaPremiadoEspañol() throws IOException, InvalidFormatException, AWTException{
+        getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
         Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
