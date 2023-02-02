@@ -1,5 +1,4 @@
 package aut.testcreation.pages;
-
 import org.openqa.selenium.By;
 
 public class Page_Scotiabank {
