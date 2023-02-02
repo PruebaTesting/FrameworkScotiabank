@@ -2,7 +2,7 @@ package aut.testcreation.steps;
 
 import framework.engine.bdd.CucumberBaseTestRunner;
 import io.cucumber.java8.En;
-import aut.testcreation.tasks.scotiabank.*;
+import aut.testcreation.tasks.ConstanciasFiscalesSitioCliente.*;
 
 public class Stepdefs_SRC_AUT_005_ConstanciasFiscalesSitioClientes extends CucumberBaseTestRunner implements En {
 
@@ -40,7 +40,7 @@ public class Stepdefs_SRC_AUT_005_ConstanciasFiscalesSitioClientes extends Cucum
             String[] lDatos = pDatos.split("&");
 
             switch (pDatos){
-                case "pNumCliente&pContrasenia":
+                case "pNumCliente&pContrasenia" :
                     Datos.IngresarDatos(lDatos[0], lDatos[1]);
                     break;
                 case "pNumContrato&pContrasenia":
@@ -54,6 +54,7 @@ public class Stepdefs_SRC_AUT_005_ConstanciasFiscalesSitioClientes extends Cucum
             }
 
         });
+
     }
 
 
