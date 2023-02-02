@@ -45,7 +45,7 @@ public class SCR_AUT_001_Biometricos extends SeleniumTestBase {
     @Test
     void SC_001_06_validacionHuellasClienteEnrolado() throws IOException {
         getTestName(getMethodName());
-        Realizar.busquedaClienteNoEnrolado();
+        Realizar.busquedaCorrectaClienteNoEnrolado();
         Ingresar.conHuella();
         assertTrue(Comprobar.validacionExitosa());
     }

@@ -23,8 +23,4 @@ public class Realizar extends SeleniumWrapper {
     public static void digitalizacionDatosINE() {
         System.out.println("Realizar.digitalizacionDatosINE");
     }
-
-    public static void busquedaClienteNoEnrolado() {
-        System.out.println("Realizar.busquedaClienteNoEnrolado");
-    }
 }
