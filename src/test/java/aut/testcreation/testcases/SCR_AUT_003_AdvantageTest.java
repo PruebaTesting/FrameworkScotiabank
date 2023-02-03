@@ -16,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class SCR_AUT_003_AdvantageTest extends SeleniumTestBase {
 
     @Test
+    @Tag("fast")
     void TC_003_01_agregarRaton() throws IOException, InvalidFormatException, AWTException {
         getTestName(getMethodName());
         Agregar.ratonAlCarrito("pPosicion");
@@ -23,6 +24,7 @@ public class SCR_AUT_003_AdvantageTest extends SeleniumTestBase {
     }
 
     @Test
+    @Tag("fast")
     void TC_003_02_usuarioExistente() throws IOException, InvalidFormatException, AWTException, InterruptedException {
         getTestName(getMethodName());
         Login.crearCuenta("pUsername", "pEmail", "pPassword", "pConfirmPassword");

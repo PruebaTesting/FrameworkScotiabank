@@ -247,4 +247,5 @@ public class SRC_AUT_003_ConstanciasFiscalesBanco extends SeleniumTestBase {
         System.out.println("el test paso");
         assertTrue(Validar.mensajeSistema("parametro"));
     }
+
 }

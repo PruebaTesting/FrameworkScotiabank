@@ -2,7 +2,7 @@
 Feature: Test para la página Advantage
 
   @fast
-  Scenario: SC_003_01_agregarRaton_joel
+  Scenario: SC_003_01_agregarRaton
     Given El Usuario agrega el ratón de la posición "pPosicion" al carrito
     Then El Usuario comprueba que el ratón se agregó al carrito
 
