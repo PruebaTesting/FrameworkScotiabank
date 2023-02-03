@@ -23,6 +23,7 @@ public class Datos extends SeleniumWrapper {
         clickear(XXX); //btn ok
         seleccionarOpcionPorTexto(XXX, "seleccionar año fiscal");
         clickear(XXX); //btn consultar
+        reporte.reportarEvento("", true, false);
         clickear(XXX); //btn download
         reporte.reportarEvento("", true, false);
     }

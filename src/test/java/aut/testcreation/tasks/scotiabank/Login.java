@@ -16,7 +16,8 @@ public class Login extends SeleniumWrapper {
     }
 
     public static void FuncionUsuario(String pIdioma) throws IOException, InvalidFormatException, AWTException {
-        navegarURL("");
+        //navegarURL("");
+        reporte.reportarEvento("", true, false);
         seleccionarOpcionPorTexto(XXX, pIdioma);
         reporte.reportarEvento("", true, false);
     }
