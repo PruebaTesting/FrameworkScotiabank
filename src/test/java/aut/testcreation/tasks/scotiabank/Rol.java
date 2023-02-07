@@ -15,8 +15,8 @@ public class Rol extends SeleniumWrapper {
         super(driver);
     }
 
-    public static void funcionRol(String Rol) throws IOException, InvalidFormatException, AWTException {
-        seleccionarOpcionPorTexto(XXX, Rol);
+    public static void funcionRol(String pRol) throws IOException, InvalidFormatException, AWTException {
+        seleccionarOpcionPorTexto(XXX, pRol);
         reporte.reportarEvento("", true, false);
     }
 }
