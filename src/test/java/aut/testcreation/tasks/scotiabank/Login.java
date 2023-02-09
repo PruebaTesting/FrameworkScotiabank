@@ -9,6 +9,10 @@ import static aut.testcreation.pages.Page_Scotiabank.XXX;
 import java.awt.*;
 import java.io.IOException;
 import static aut.testcreation.pages.Page_Scotiabank.*;
+
+import java.awt.*;
+import java.io.IOException;
+
 import static framework.engine.selenium.ReportFunctionalities.reporte;
 
 public class Login extends SeleniumWrapper {
@@ -36,6 +40,19 @@ public class Login extends SeleniumWrapper {
         //navegarURL("");
         reporte.reportarEvento("", true, false);
         seleccionarOpcionPorTexto(XXX, pIdioma);
+    public static void ingresar() throws IOException, InvalidFormatException, AWTException {
+        //navegarURL("");
+        //clickear(BtnCuenta);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void registrarse() throws IOException, InvalidFormatException, AWTException {
+        //navegarURL();
+        //escribirEnInput();
+        //escribirEnInput();
+        //clickear();
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
     }
 }
