@@ -4,35 +4,12 @@ import framework.engine.bdd.CucumberBaseTestRunner;
 import io.cucumber.java8.En;
 import aut.testcreation.tasks.ConstanciasFiscalesSitioCliente.*;
 
-public class Stepdefs_SRC_AUT_005_ConstanciasFiscalesSitioClientes extends CucumberBaseTestRunner implements En {
+public class Steps_005_ConstanciasFiscalesSitioClientes extends CucumberBaseTestRunner implements En {
 
-    public Stepdefs_SRC_AUT_005_ConstanciasFiscalesSitioClientes(){
+    public Steps_005_ConstanciasFiscalesSitioClientes(){
         Given("El Usuario se logea en el Home Page con el idioma {string}",(String pIdioma) ->{
             Login.FuncionUsuario(pIdioma);
         });
-        When("El Usuario selecciona el Rol{string}",(String pRol) ->{
-            switch (pRol){
-                case "Bank Client":
-                    //Rol.funcionRol(Rol);
-                    break;
-                case "Cliente banco":
-                    //Rol.funcionRol(Rol);
-                    break;
-                case "Cliente Casa de Bolsa":
-                    //Rol.funcionRol(Rol);
-                    break;
-                case "MexDer":
-                    //Rol.funcionRol(Rol);
-                    break;
-                case "Premiado":
-                    break;
-                case "Proveedor":
-                    //Rol.funcionRol(Rol);
-                    break;
-            }
-        });
-
-
         Then("El Sistema muestra en pantalla el mensaje: {string}", (String parametro) ->{
             Validar.mensajeSistema(parametro);
         });
@@ -53,6 +30,27 @@ public class Stepdefs_SRC_AUT_005_ConstanciasFiscalesSitioClientes extends Cucum
                     break;
             }
 
+        });
+        When("El Usuario selecciona el Rol {string}", (String pRol) -> {
+            switch (pRol){
+                case "Bank Client":
+                    //Rol.funcionRol(Rol);
+                    break;
+                case "Cliente banco":
+                    //Rol.funcionRol(Rol);
+                    break;
+                case "Cliente Casa de Bolsa":
+                    //Rol.funcionRol(Rol);
+                    break;
+                case "MexDer":
+                    //Rol.funcionRol(Rol);
+                    break;
+                case "Premiado":
+                    break;
+                case "Proveedor":
+                    //Rol.funcionRol(Rol);
+                    break;
+            }
         });
 
     }
