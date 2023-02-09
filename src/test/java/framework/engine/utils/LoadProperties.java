@@ -14,15 +14,19 @@ public class LoadProperties {
      * @return lPropiedades
      */
     public static Properties loadProperties(){
-        String lFile = "config";
+        String[] lFile = {"config", "android"};
         Properties lPropiedades = new Properties();
-        ResourceBundle lBundle = ResourceBundle.getBundle(lFile);
-        Enumeration<String> e = lBundle.getKeys();
-        String lKey;
-        while (e.hasMoreElements()){
-            lKey = (String) e.nextElement();
-            lPropiedades.put(lKey,lBundle.getObject(lKey));
+
+        for (String file:lFile) {
+            ResourceBundle lBundle = ResourceBundle.getBundle(file);
+            Enumeration<String> e = lBundle.getKeys();
+            String lKey;
+            while (e.hasMoreElements()){
+                lKey = (String) e.nextElement();
+                lPropiedades.put(lKey,lBundle.getObject(lKey));
+            }
         }
+
         return lPropiedades;
     }
 

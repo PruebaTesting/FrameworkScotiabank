@@ -6,6 +6,7 @@ import framework.engine.selenium.DriverFactory;
 import static framework.engine.selenium.ReportFunctionalities.*;
 import static framework.engine.utils.Constants.BROWSER;
 
+import framework.engine.selenium.SeleniumWrapper;
 import framework.engine.utils.LoadProperties;
 import io.cucumber.java8.Scenario;
 import io.cucumber.junit.Cucumber;
@@ -47,7 +48,6 @@ public class CucumberBaseTestRunner {
     public static void setUp(Scenario pEscenario) throws IOException, InvalidFormatException {
         properties = LoadProperties.loadProperties();
         LoadProperties.getEscenario(pEscenario.getName());
-        System.out.println("Entra acá");
         webDriverSetup();
     }
 
@@ -65,7 +65,8 @@ public class CucumberBaseTestRunner {
             driver.manage().window().maximize();
         }
         newReport();
-        login = new Login(driver);
+        //login = new Login(driver);
+        new SeleniumWrapper(driver);
     }
 
     /**

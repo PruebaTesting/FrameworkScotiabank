@@ -21,4 +21,12 @@ public class Constants {
     public static final String TIEMPO_ESPERA = properties.getProperty("tiempoEspera");
     public static final String FILES_PATH = properties.getProperty("files.path");
     public static String EXCEPTION = null;
+
+    // Android
+    public static final String DEVICE_NAME = properties.getProperty("device.name");
+    public static final String PLATFORM_VERSION = properties.getProperty("platform.version");
+    public static final String UDID = properties.getProperty("udid");
+    public static final String APP_PACKAGE = properties.getProperty("app.package");
+    public static final String APP_ACTIVITY = properties.getProperty("app.activity");
+    public static final String SERVER_URL = properties.getProperty("server.url");
 }
