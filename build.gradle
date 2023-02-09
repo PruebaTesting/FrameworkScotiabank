@@ -66,6 +66,9 @@ dependencies {
     testImplementation "info.cukes:gherkin:2.12.2"
     testImplementation 'io.qameta.allure:allure-cucumber5-jvm:2.13.3'
 
+    //---------------------- Android --------------------------------
+    implementation 'io.appium:java-client:8.3.0'
+
     //---------------------- APIs -----------------------------------
     //RestAssured
     /*testImplementation "io.rest-assured:rest-assured:${restAssuredVersion}"
