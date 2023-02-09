@@ -1,4 +1,4 @@
-package aut.testcreation.testcases;
+package aut.testcreation.testcases.web;
 
 import aut.testcreation.tasks.advantage.Agregar;
 import aut.testcreation.tasks.advantage.Comprobar;

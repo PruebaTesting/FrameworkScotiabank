@@ -1,4 +1,4 @@
-package aut.testcreation.testcases;
+package aut.testcreation.testcases.web;
 
 import aut.testcreation.tasks.scotiabank.Login;
 import aut.testcreation.tasks.scotiabank.Menu;

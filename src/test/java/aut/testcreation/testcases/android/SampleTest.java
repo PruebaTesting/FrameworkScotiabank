@@ -1,4 +1,4 @@
-package aut.testcreation.androidtestcases;
+package aut.testcreation.testcases.android;
 import aut.testcreation.tasks.bineo.Login;
 import framework.engine.selenium.AppiumTestBase;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -13,5 +13,4 @@ public class SampleTest extends AppiumTestBase {
     public void sampleTest() throws InterruptedException, IOException, InvalidFormatException, AWTException {
         Login.ingresarCorrectamente();
     }
-
 }
