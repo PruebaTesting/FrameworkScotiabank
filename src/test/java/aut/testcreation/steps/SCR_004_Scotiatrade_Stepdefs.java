@@ -23,9 +23,9 @@ public class SCR_004_Scotiatrade_Stepdefs extends CucumberBaseTestRunner impleme
         When("El Usuario hace el Cambio de Imagen invalido", (String pMenu, String pDatos, String pPathImg) -> {
             Menu.cambioImagenInvalido(pMenu, pDatos, pPathImg);
         });
-        Then("El Sistema muestra en pantalla el mensaje: {string}", (String parametro) -> {
+        /*Then("El Sistema muestra en pantalla el mensaje: {string}", (String parametro) -> {
             Validar.mensajeSistema(parametro);
-        });
+        });*/
         Then("El Usuario valida el cambio de imagen", () -> {
             Validar.cambioImagen();
         });

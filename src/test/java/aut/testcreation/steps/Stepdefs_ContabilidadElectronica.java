@@ -32,8 +32,8 @@ public class Stepdefs_ContabilidadElectronica extends CucumberBaseTestRunner imp
         });
         Given("El Usuario se loguea en el Home Page", () -> {
         });
-        When("El Usuario selecciona el Rol {string}", (String arg0) -> {
-        });
+        /*When("El Usuario selecciona el Rol {string}", (String arg0) -> {
+        });*/
         Then("El Sistema muestra en pantalla la pantalla de Administración de XML´s TSYS", () -> {
         });
         When("El Usuario consulta la información Tipo de Log", () -> {

@@ -9,7 +9,7 @@ public class Stepdefs_SRC_AUT_003_ConstanciasFiscalesBanco extends CucumberBaseT
         Given("El Usuario se logea en el Home Page con el idioma {string}", (String pIdioma) -> {
             Login.FuncionUsuario(pIdioma);
         });
-        When("El Usuario selecciona el Rol {string}", (String Rol) -> {
+        /*When("El Usuario selecciona el Rol {string}", (String Rol) -> {
             switch (Rol){
                 case "Bank Client":
                     //Rol.funcionRol(Rol);
@@ -29,7 +29,7 @@ public class Stepdefs_SRC_AUT_003_ConstanciasFiscalesBanco extends CucumberBaseT
                     //Rol.funcionRol(Rol);
                     break;
             }
-        });
+        });*/
         And("El Usuario ingresa los datos requeridos para descargar la constancia {string}", (String pDatos) -> {
             String[] lDatos = pDatos.split(" & ");
 
@@ -47,8 +47,8 @@ public class Stepdefs_SRC_AUT_003_ConstanciasFiscalesBanco extends CucumberBaseT
                     break;
             }
         });
-        Then("El Sistema muestra en pantalla el mensaje: {string}", (String parametro) -> {
+        /*Then("El Sistema muestra en pantalla el mensaje: {string}", (String parametro) -> {
             Validar.mensajeSistema(parametro);
-        });
+        });*/
     }
 }

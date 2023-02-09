@@ -7,13 +7,13 @@ import aut.testcreation.tasks.ConstanciasFiscalesSitioCliente.*;
 public class Steps_005_ConstanciasFiscalesSitioClientes extends CucumberBaseTestRunner implements En {
 
     public Steps_005_ConstanciasFiscalesSitioClientes(){
-        Given("El Usuario se logea en el Home Page con el idioma {string}",(String pIdioma) ->{
+        /*Given("El Usuario se logea en el Home Page con el idioma {string}",(String pIdioma) ->{
             Login.FuncionUsuario(pIdioma);
-        });
+        });*/
         Then("El Sistema muestra en pantalla el mensaje: {string}", (String parametro) ->{
             Validar.mensajeSistema(parametro);
         });
-        And("El Usuario ingresa los datos requeridos para descargar la constancia {string}", (String pDatos) -> {
+        /*And("El Usuario ingresa los datos requeridos para descargar la constancia {string}", (String pDatos) -> {
             String[] lDatos = pDatos.split("&");
 
             switch (pDatos){
@@ -30,7 +30,7 @@ public class Steps_005_ConstanciasFiscalesSitioClientes extends CucumberBaseTest
                     break;
             }
 
-        });
+        });*/
         When("El Usuario selecciona el Rol {string}", (String pRol) -> {
             switch (pRol){
                 case "Bank Client":
