@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import static framework.engine.selenium.ReportFunctionalities.*;
-import static framework.engine.utils.Constants.BROWSER;
+import static framework.engine.utils.Constants.*;
 
 public class SeleniumTestBase {
 
@@ -40,7 +40,8 @@ public class SeleniumTestBase {
         driverFactory = new DriverFactory();
         driver = driverFactory.inicializarDriver(BROWSER);
         newReport();
-        login = new Login(DriverFactory.getDriver());
+        //login = new Login(DriverFactory.getDriver());
+        new SeleniumWrapper(driver);
     }
 
     /**
