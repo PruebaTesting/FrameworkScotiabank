@@ -2,7 +2,7 @@ Feature:
 
   Scenario Outline: <Escenario>
     Given El Usuario se logea en el Home Page con el idioma "<Idioma>"
-    When El Usuario selecciona el Rol "<Rol>"
+    When El Usuario selecciona el Rol "<pRol>"
     And El Usuario ingresa los datos requeridos para descargar la constancia "<Datos>"
     Then El Sistema muestra en pantalla el mensaje: "mensaje del sistema"
     Examples:

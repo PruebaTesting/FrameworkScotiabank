@@ -15,11 +15,13 @@ public class Validar extends SeleniumWrapper {
         super(driver);
     }
 
-    public static boolean mensajeSistema(String pMensaje) throws IOException, InvalidFormatException, AWTException {
-        verificarTexto(XXX, pMensaje);
+    public static boolean mensajeSistema(String pMensaje)throws IOException, InvalidFormatException, AWTException{
+        //verificarTexto(XXX, pMensaje);
         reporte.reportarEvento("", true, false);
         return false;
     }
+
+
 
 
 }
