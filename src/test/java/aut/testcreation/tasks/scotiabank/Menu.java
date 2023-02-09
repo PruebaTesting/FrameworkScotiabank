@@ -65,7 +65,7 @@ public class Menu extends SeleniumWrapper {
         escribirEnInput(XXX, pDatos);
         escribirEnInput(XXX, pCaptcha);
         clickear(XXX); // click btn-Regresar
-
+    }
     public static void seleccionarRol() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
     }
