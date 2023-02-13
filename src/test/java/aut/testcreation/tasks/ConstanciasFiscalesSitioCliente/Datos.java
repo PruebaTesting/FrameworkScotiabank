@@ -16,7 +16,14 @@ public class Datos extends SeleniumWrapper {
         super(driver);
     }
 
-    public static void IngresarDatos(String pNumeroDeContrato, String pContrasenia) throws IOException, InvalidFormatException, AWTException {
+    public static void IngresarDatosCliente(String pNumCliente, String pContrasenia) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+
+    public static void IngresarDatosContrato(String pNumContrato, String pContrasenia) throws IOException, InvalidFormatException, AWTException {
         //escribirEnInput(XXX, ExcelReader.extractDataToExcel(pNumeroDeContrato));
         //escribirEnInput(XXX, ExcelReader.extractDataToExcel(pContrasenia));
         //clickear(XXX); //cbx no soy un robot
@@ -26,14 +33,33 @@ public class Datos extends SeleniumWrapper {
         //clickear(XXX); //btn consultar
         //clickear(XXX); //btn download
         reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
     }
-    public static void CompletarDatos() throws IOException, InvalidFormatException, AWTException {
+
+
+    public static void CompletarDatos(String pClaveIdentificador, String pCorreo,String pRFC,String pEjercicio) throws IOException, InvalidFormatException, AWTException {
         //clickear(XXX); //cbx no soy un robot
         //reporte.reportarEvento("", true, false);
         //clickear(XXX); //btn ok
         //seleccionarOpcionPorTexto(XXX, "seleccionar año fiscal");
         //clickear(XXX); //btn consultar
         //clickear(XXX); //btn download
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+
+    }
+
+
+    public static void IngresarDatosBancaria(String pNumCuentaBancaria) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
     }
 }

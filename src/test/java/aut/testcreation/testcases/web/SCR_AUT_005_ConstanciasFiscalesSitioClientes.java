@@ -20,11 +20,9 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.IngresarDatosCliente("pNumCliente","pContrasenia");
         Validar.mensajeSistema("parametro");
-        System.out.println("el test paso");
-       // assertTrue(Validar.mensajeSistema("validacion"));
+       //assertTrue(Validar.mensajeSistema("validacion"));
 
     }
     @Test
@@ -32,8 +30,9 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.IngresarDatosCliente("pNumCliente","pContrasenia");
+
+        Validar.mensajeSistema("parametro");
         //assertTrue(Validar.mensajeSistema("validacion"));
     }
     @Test
@@ -41,8 +40,8 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.IngresarDatosContrato("pNumeroDeContrato","pContrasenia");
+        Validar.mensajeSistema("parametro");
         //assertTrue(Validar.mensajeSistema("validacion"));
     }
     @Test
@@ -50,8 +49,8 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.IngresarDatosContrato("pNumeroDeContrato","pContrasenia");
+        Validar.mensajeSistema("parametro");
         //assertTrue(Validar.mensajeSistema("validacion"));
     }
     @Test
@@ -59,8 +58,8 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.IngresarDatosContrato("pNumeroDeContrato","pContrasenia");
+        Validar.mensajeSistema("parametro");
         //assertTrue(Validar.mensajeSistema("validacion"));
     }
     @Test
@@ -68,8 +67,8 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.IngresarDatosContrato("pNumeroDeContrato","pContrasenia");
+        Validar.mensajeSistema("parametro");
         //assertTrue(Validar.mensajeSistema("validacion"));
     }
     @Test
@@ -77,8 +76,8 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.IngresarDatosCliente("pNumCliente","pContrasenia");
+        Validar.mensajeSistema("parametro");
        // assertTrue(Validar.mensajeSistema("validacion"));
     }
     @Test
@@ -86,8 +85,8 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.IngresarDatosCliente("pNumCliente","pContrasenia");
+        Validar.mensajeSistema("parametro");
        // assertTrue(Validar.mensajeSistema("validacion"));
     }
     @Test
@@ -95,8 +94,8 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.IngresarDatosBancaria("pNumCuentaBancaria");
+        Validar.mensajeSistema("parametro");
        // assertTrue(Validar.mensajeSistema("validacion"));
     }
     @Test
@@ -104,8 +103,8 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.IngresarDatosBancaria("pNumCuentaBancaria");
+        Validar.mensajeSistema("parametro");
        // assertTrue(Validar.mensajeSistema("validacion"));
     }
     @Test
@@ -113,8 +112,8 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.CompletarDatos("pClaveIdentificador","pCorreo","pRFC","pEjercicio");
+        Validar.mensajeSistema("parametro");
        // assertTrue(Validar.mensajeSistema("validacion"));
     }
     @Test
@@ -122,8 +121,8 @@ public class SCR_AUT_005_ConstanciasFiscalesSitioClientes extends SeleniumTestBa
         getTestName(getMethodName());
         Login.FuncionUsuario("pIdioma");
         Rol.funcionRol("pRol");
-        Datos.IngresarDatos("pNumeroDeContrato","pContrasenia");
-        Datos.CompletarDatos();
+        Datos.CompletarDatos("pClaveIdentificador","pCorreo","pRFC","pEjercicio");
+        Validar.mensajeSistema("parametro");
        // assertTrue(Validar.mensajeSistema("validacion"));
     }
 
