@@ -21,6 +21,7 @@ public class Datos extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
     }
 
     public static void IngresarDatosContrato(String pNumContrato, String pContrasenia) throws IOException, InvalidFormatException, AWTException {
