@@ -11,6 +11,7 @@ import java.awt.*;
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static framework.engine.selenium.GetTestName.*;
 
 public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
 

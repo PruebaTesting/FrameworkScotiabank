@@ -1,8 +1,10 @@
 package framework.engine.bdd;
 
 import aut.testcreation.tasks.advantage.Login;
+import framework.engine.selenium.AppiumTestBase;
 import framework.engine.selenium.DriverFactory;
 
+import static framework.engine.selenium.AppiumTestBase.*;
 import static framework.engine.selenium.ReportFunctionalities.*;
 import static framework.engine.utils.Constants.BROWSER;
 
@@ -24,7 +26,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.time.Duration;
-import java.util.Properties;
+import java.util.Objects;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"pretty", "io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"},
@@ -37,7 +39,6 @@ public class CucumberBaseTestRunner {
     public static WebDriver driver;
     private static DriverFactory driverFactory;
     public static Login login;
-    static Properties properties;
 
     /**
      * Se ejecuta antes de cada escenario. Carga las propiedades, obtiene el nombre del escenario actual e inicializa el driver con el browser por defecto.
@@ -46,9 +47,15 @@ public class CucumberBaseTestRunner {
      * @throws InvalidFormatException
      */
     public static void setUp(Scenario pEscenario) throws IOException, InvalidFormatException {
-        properties = LoadProperties.loadProperties();
-        LoadProperties.getEscenario(pEscenario.getName());
-        webDriverSetup();
+        String lEscenario = pEscenario.getName();
+        String lTipoTest = lEscenario.split("_")[0];
+        LoadProperties.getEscenario(lEscenario);
+        newReport();
+        if (Objects.equals(lTipoTest, "ADR")) {
+            androidDriverSetUp();
+        } else {
+            webDriverSetUp();
+        }
     }
 
     /**
@@ -56,16 +63,9 @@ public class CucumberBaseTestRunner {
      * @throws IOException
      * @throws InvalidFormatException
      */
-    private static void webDriverSetup() throws IOException, InvalidFormatException {
+    private static void webDriverSetUp() {
         driverFactory = new DriverFactory();
-        driver = driverFactory.createWebDriver(BROWSER);
-        if (driver != null) {
-            driver.manage().deleteAllCookies();
-            driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
-            driver.manage().window().maximize();
-        }
-        newReport();
-        //login = new Login(driver);
+        driver = driverFactory.inicializarDriver(BROWSER);
         new SeleniumWrapper(driver);
     }
 
@@ -75,6 +75,7 @@ public class CucumberBaseTestRunner {
      * @throws IOException
      */
     public static void tearDown(Scenario pEscenario) throws IOException {
+        String lTipoTest = pEscenario.getName().split("_")[0];
         finishReport();
         if (pEscenario.isFailed()) {
             try {
@@ -87,7 +88,11 @@ public class CucumberBaseTestRunner {
             }
         }
         if (driver != null) {
-            driver.close();
+            if (Objects.equals(lTipoTest, "ADR")) {
+                androidQuitDriver();
+            } else {
+                driver.close();
+            }
         }
     }
 }

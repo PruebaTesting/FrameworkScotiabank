@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static framework.engine.selenium.GetTestName.*;
 
 public class SCR_AUT_001_Biometricos extends SeleniumTestBase {
 
