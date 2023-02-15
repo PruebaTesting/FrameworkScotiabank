@@ -1,8 +1,6 @@
 package aut.testcreation.testcases.web;
 
-import aut.testcreation.tasks.scotiabank.Consulta;
-import aut.testcreation.tasks.scotiabank.Login;
-import aut.testcreation.tasks.scotiabank.Validar;
+import aut.testcreation.tasks.scotiabank.*;
 import aut.testcreation.tasks.scotiabank.Menu;
 import framework.engine.selenium.SeleniumTestBase;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -82,5 +80,109 @@ public class SCR_AUT_006_ContabilidadElectronica extends SeleniumTestBase {
         Login.registrarse();
         Menu.seleccionarRol();
         Validar.listaRegistros();
+    }
+    @Test
+    void TC_006_11_ValidarLogPrecargaDeInformación() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.tipoLog();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_12_ValidarLogDeCargaDeInformación() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.tipoLog();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_13_ValidarLogDeCargaDeBalanzas() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.tipoLog();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_14_ValidarLogDeCargaDeFolios() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.tipoLog();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_15_ValidarLogDeCargaDeJournal() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.tipoLog();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_16_ValidarLogDeCargaDeReconfileTSYS() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.tipoLog();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_17_ValidarLogDeCargaDeTryBalance() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.tipoLog();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_18_ValidarLogDeCargaDeXmlTSYS() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.tipoLog();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_19_ValidarLogDeCargaDeEDL() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.tipoLog();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_20_ValidarLogDelFrontCME() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.tipoLog();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_21_IngresarAlSitioConContraseñaUsuarioConTodosLosRoles() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Rol.RolConsulta();
+        Validar.pantallaFinal();
+    }
+    @Test
+    void TC_006_22_GeneraciónDeXmlAuxiliarDeFoliosConNúmeroDeOrdenTodosLosAplicativos() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.generacionXML();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_23_ListadoDeXmlConsultaGeneral() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.listadoXML();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_24_ListadoDeBalanzasConsultaGeneralDeBalanzas() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Informacion.listadoXML();
+        Validar.informacionRequerida();
+    }
+    @Test
+    void TC_006_25_SalirDelSitio() throws IOException, InvalidFormatException, AWTException {
+        getTestName(getMethodName());
+        Login.ingresar();
+        Login.InicioSesion();
     }
 }

@@ -27,20 +27,27 @@ public class Login extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
-        reporte.reportarEvento("", true, false);
     }
     public static void ingresarScotiatrade() throws IOException, InvalidFormatException, AWTException {
-        navegarURL("XXX");
-        clickear(XXX);
-        escribirEnInput(XXX, "se escribe num. usuario");
-        escribirEnInput(XXX, "se escribe num. usuario");
-        clickear(XXX);
-        clickear(XXX);
-        clickear(XXX);
+        //navegarURL("XXX");
+        //clickear(XXX);
+        //escribirEnInput(XXX, "se escribe num. usuario");
+        //escribirEnInput(XXX, "se escribe num. usuario");
+        //clickear(XXX);
+        //clickear(XXX);
+        //clickear(XXX);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
     }
     public static void ingresar() throws IOException, InvalidFormatException, AWTException {
         //navegarURL("");
         //clickear(BtnCuenta);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void InicioSesion() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
     }
 }

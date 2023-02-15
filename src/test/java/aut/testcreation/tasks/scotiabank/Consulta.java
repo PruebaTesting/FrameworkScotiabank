@@ -20,7 +20,6 @@ public class Consulta extends SeleniumWrapper {
         //seleccionarOpcionPorTexto(fldFecha, "");
         reporte.reportarEvento("", true, false);
         //clickear(BtnConsultar);
-        reporte.reportarEvento("", true, false);
     }
     public static void seleccionarFecha() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);

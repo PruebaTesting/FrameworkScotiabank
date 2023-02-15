@@ -27,4 +27,10 @@ public class Validar extends SeleniumWrapper {
         //encontarElementos(lstRegistros);
         reporte.reportarEvento("", true, false);
     }
+    public static void pantallaFinal() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void informacionRequerida() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
 }

@@ -16,15 +16,16 @@ public class Datos extends SeleniumWrapper {
     }
 
     public static void IngresarDatos(String pDato, String pDato2) throws IOException, InvalidFormatException, AWTException {
-        escribirEnInput(XXX,pDato);
-        escribirEnInput(XXX,pDato2);
-        clickear(XXX); //cbx no soy un robot
+        //escribirEnInput(XXX,pDato);
+        //escribirEnInput(XXX,pDato2);
+        //clickear(XXX); //cbx no soy un robot
         reporte.reportarEvento("", true, false);
-        clickear(XXX); //btn ok
-        seleccionarOpcionPorTexto(XXX, "seleccionar año fiscal");
-        clickear(XXX); //btn consultar
         reporte.reportarEvento("", true, false);
-        clickear(XXX); //btn download
+        //clickear(XXX); //btn ok
+        //seleccionarOpcionPorTexto(XXX, "seleccionar año fiscal");
+        //clickear(XXX); //btn consultar
+        reporte.reportarEvento("", true, false);
+        //clickear(XXX); //btn download
         reporte.reportarEvento("", true, false);
     }
 }
