@@ -10,9 +10,11 @@ public class Steps_005_ConstanciasFiscalesSitioClientes extends CucumberBaseTest
         Given("El Usuario se logea en el Home Page con el idioma {string}",(String pIdioma) ->{
             Login.FuncionUsuario(pIdioma);
         });
+
         Then("El Sistema muestra en pantalla el mensaje: {string}", (String parametro) ->{
             Validar.mensajeSistema(parametro);
         });
+
         And("El Usuario ingresa los datos requeridos para descargar la constancia {string}", (String pDatos) -> {
             String[] lDatos = pDatos.split("&");
 
@@ -29,8 +31,8 @@ public class Steps_005_ConstanciasFiscalesSitioClientes extends CucumberBaseTest
                 case "otros":
                     break;
             }
-
         });
+/*
         When("El Usuario selecciona el Rol {string}", (String pRol) -> {
             switch (pRol){
                 case "Bank Client":
@@ -52,9 +54,6 @@ public class Steps_005_ConstanciasFiscalesSitioClientes extends CucumberBaseTest
                     break;
             }
         });
-
+*/
     }
-
-
-
 }

@@ -6,49 +6,48 @@ import aut.testcreation.tasks.scotiabank.*;
 
 public class Stepdefs_SRC_AUT_003_ConstanciasFiscalesBanco extends CucumberBaseTestRunner implements En{
     public Stepdefs_SRC_AUT_003_ConstanciasFiscalesBanco() {
-        Given("El Usuario se logea en el Home Page con el idioma {string}", (String pIdioma) -> {
+        Given("El Usuario se logea en el Page Constancias Fiscales Banco con el idioma {string}", (String pIdioma) -> {
             Login.FuncionUsuario(pIdioma);
         });
-        When("El Usuario selecciona el Rol {string}", (String Rol) -> {
-            switch (Rol){
+        When("El Usuario selecciona el Rol {string}", (String pRol) -> {
+            switch (pRol){
                 case "Bank Client":
-                    //Rol.funcionRol(Rol);
+                    Rol.funcionRol("Rol");
                     break;
                 case "Cliente banco":
-                    //Rol.funcionRol(Rol);
+                    Rol.funcionRol("Rol");
                     break;
                 case "Cliente Casa de Bolsa":
-                    //Rol.funcionRol(Rol);
+                    Rol.funcionRol("Rol");
                     break;
                 case "MexDer":
-                    //Rol.funcionRol(Rol);
+                    Rol.funcionRol("Rol");
                     break;
                 case "Premiado":
+                    Rol.rolPremiadoProveedor();
                     break;
                 case "Proveedor":
-                    //Rol.funcionRol(Rol);
+                    Rol.rolPremiadoProveedor();
                     break;
             }
         });
-        And("El Usuario ingresa los datos requeridos para descargar la constancia {string}", (String pDatos) -> {
+        And("El Usuario ingresa los Datos requeridos para descargar la correspondiente {string}", (String pDatos) -> {
             String[] lDatos = pDatos.split(" & ");
 
             switch (pDatos){
-                case "pNumCliente&pContrasenia":
-                    Datos.IngresarDatos(lDatos[0], lDatos[1]);
+                case "pNumCliente & pContrasenia":
+                    Datos.IngresarDatos("", "");
                     break;
-                case "pNumContrato&pContrasenia":
-                    Datos.IngresarDatos(lDatos[0], lDatos[1]);
+                case "pNumContrato & pContrasenia":
+                    Datos.IngresarDatos("", "");
                     break;
                 case "pNumCuentaBancaria":
-                    Datos.IngresarDatos(lDatos[0], lDatos[1]);
+                    Datos.IngresarDatos("", "");
                     break;
-                case "otros":
+                case "pClaveIdentificador & pCorreo & pRFC & pEjercicio":
+                    Datos.IngresarDatos("", "");
                     break;
             }
-        });
-        Then("El Sistema muestra en pantalla el mensaje: {string}", (String parametro) -> {
-            Validar.mensajeSistema(parametro);
         });
     }
 }

@@ -17,33 +17,41 @@ public class SCR_004_Scotiatrade_Stepdefs extends CucumberBaseTestRunner impleme
         When("El Usuario hace el Cambio de Clave Personal", () -> {
             Menu.ClavePersonal();
         });
-        When("El Usuario hace el Cambio de Imagen valida", (String pMenu, String pDatos) -> {
-            Menu.cambioImagenvalida(pMenu, pDatos);
+        When("El Usuario hace el Cambio de Imagen valida", () -> {
+            Menu.cambioImagenvalida();
         });
-        When("El Usuario hace el Cambio de Imagen invalido", (String pMenu, String pDatos, String pPathImg) -> {
-            Menu.cambioImagenInvalido(pMenu, pDatos, pPathImg);
+        When("El Usuario hace el Cambio de Imagen invalido", () -> {
+            Menu.cambioImagenInvalido();
         });
-        Then("El Sistema muestra en pantalla el mensaje: {string}", (String parametro) -> {
-            Validar.mensajeSistema(parametro);
-        });
+
         Then("El Usuario valida el cambio de imagen", () -> {
             Validar.cambioImagen();
         });
 
-        When("El Usuario hace el Cambio de e-mail", (String pMenu, String pMail, String pCiudad, String pTelefono, String pExtension, String pContrasenia) -> {
-            Menu.cambioMail(pMenu, pMail, pCiudad, pTelefono, pExtension, pContrasenia);
+        When("El Usuario hace el Cambio de e-mail", () -> {
+            Menu.cambioMail();
         });
         Then("El Usuario valida los cambios de e-mail", (String parametro) -> {
             Validar.mensajeSistema(parametro);
         });
-        Then("El Usuario ingresa el número de Token", (String pToken) -> {
-            Menu.ingresarToken(pToken);
-        });
-        When("El Usuario hace el Cambio de Pregunta Secreta", (String pPreguntaSecreta, String pRespuesta, String pConfirRta) -> {
-            Menu.CambioPreguntaSecreta(pPreguntaSecreta, pRespuesta, pConfirRta);
+
+        When("El Usuario hace el Cambio de Pregunta Secreta", () -> {
+            Menu.CambioPreguntaSecreta();
         });
         And("El Usuario ingresa los datos para registrar número de Token", (String pDatos, String pCaptcha) -> {
             Menu.RegistarToken(pDatos, pCaptcha);
+        });
+        When("El Usuario hace el Cambio de Clave Personal, con Clave Nueva Incorrecta", () -> {
+            Menu.ClavePersonalIncorrecta();
+        });
+        When("El Usuario hace el Cambio de Clave Personal, sin ingresar Número de Usuario", () -> {
+            Menu.IntentarCambiarClave();
+        });
+        Given("El Usuario ingresa al HomePage de ScotiaTrade", () -> {
+            Login.ingresar();
+        });
+        When("El Usuario hace el Cambio de e-mail, con Token", () -> {
+            Menu.CambioMailConToken();
         });
     }
 }
