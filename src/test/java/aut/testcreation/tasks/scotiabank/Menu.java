@@ -105,4 +105,17 @@ public class Menu extends SeleniumWrapper {
     public static void listadoBalanzasEmpresariales() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
     }
+    public static void cartasConfirmacion() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void constanciasFiscales() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void navegacionSuperior() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
 }
