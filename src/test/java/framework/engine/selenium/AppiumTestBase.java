@@ -1,47 +1,40 @@
 package framework.engine.selenium;
 
-import aut.testcreation.tasks.bineo.Login;
 import io.appium.java_client.android.AndroidDriver;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.junit.After;
 import org.junit.Before;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URL;
 
-import static framework.engine.utils.Constants.*;
+import static framework.engine.selenium.ReportFunctionalities.*;
+
 
 public class AppiumTestBase {
 
     static AndroidDriver driver;
+    private static DriverFactory driverFactory;
 
     @Before
-    public void setUp() throws MalformedURLException {
-        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-
-        desiredCapabilities.setCapability("appium:deviceName", DEVICE_NAME);
-        desiredCapabilities.setCapability("platformName", "Android");
-        desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
-        desiredCapabilities.setCapability("appium:platformVersion", PLATFORM_VERSION);
-        desiredCapabilities.setCapability("appium:udid", UDID);
-        desiredCapabilities.setCapability("appium:newCommandTimeout", 20);
-        desiredCapabilities.setCapability("appium:noReset", true);
-        desiredCapabilities.setCapability("appium:appPackage", APP_PACKAGE);
-        desiredCapabilities.setCapability("appium:appActivity", APP_ACTIVITY);
-        desiredCapabilities.setCapability("appium:ensureWebviewsHavePages", true);
-        desiredCapabilities.setCapability("appium:nativeWebScreenshot", true);
-        desiredCapabilities.setCapability("appium:connectHardwareKeyboard", true);
-
-        URL remoteUrl = new URL(SERVER_URL);
-
-        driver = new AndroidDriver(remoteUrl, desiredCapabilities);
-        //probarAppium = new Login(driver);
-        //SeleniumWrapper seleniumWrapper = new SeleniumWrapper(driver, "bandera");
-        new AppiumWrapper(driver);
+    public void setUp() throws IOException, InvalidFormatException {
+        newReport();
+        androidDriverSetUp();
     }
 
     @After
-    public void tearDown() {
+    public void tearDown() throws IOException {
+        finishReport();
+        androidQuitDriver();
+    }
+
+    public static void androidDriverSetUp() throws MalformedURLException {
+        driverFactory = new DriverFactory();
+        driver = driverFactory.inicializarAndroidDriver();
+        new AppiumWrapper(driver);
+    }
+
+    public static void androidQuitDriver() {
         driver.quit();
     }
 

@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import java.awt.*;
 import java.io.IOException;
 
+import static framework.engine.selenium.GetTestName.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SCR_AUT_003_AdvantageTest extends SeleniumTestBase {
