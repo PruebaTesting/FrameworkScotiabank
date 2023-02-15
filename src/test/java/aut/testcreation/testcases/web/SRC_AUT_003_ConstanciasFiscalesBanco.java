@@ -1,5 +1,6 @@
 package aut.testcreation.testcases.web;
 
+import static framework.engine.selenium.GetTestName.*;
 import aut.testcreation.tasks.scotiabank.Datos;
 import aut.testcreation.tasks.scotiabank.Login;
 import aut.testcreation.tasks.scotiabank.Rol;

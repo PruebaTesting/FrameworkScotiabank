@@ -88,10 +88,10 @@ public class Menu extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
     }
 
-    public static void RegistarToken(String pDatos, String pCaptcha) throws IOException, InvalidFormatException, AWTException {
-        escribirEnInput(XXX, pDatos);
-        escribirEnInput(XXX, pCaptcha);
-        clickear(XXX); // click btn-Regresar
+    public static void RegistarToken() throws IOException, InvalidFormatException, AWTException {
+        //escribirEnInput(XXX, pDatos);
+        //escribirEnInput(XXX, pCaptcha);
+        //clickear(XXX); // click btn-Regresar
     }
     public static void seleccionarRol() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);

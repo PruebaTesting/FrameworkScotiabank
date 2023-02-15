@@ -1,5 +1,5 @@
 package aut.testcreation.testcases.web;
-
+import static framework.engine.selenium.GetTestName.*;
 import aut.testcreation.tasks.scotiabank.*;
 import aut.testcreation.tasks.scotiabank.Menu;
 import framework.engine.selenium.SeleniumTestBase;
