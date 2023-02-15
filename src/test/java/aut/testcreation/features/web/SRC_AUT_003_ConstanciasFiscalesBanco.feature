@@ -1,12 +1,12 @@
 Feature:
 
-  Scenario Outline: <Escenario>
-    Given El Usuario se logea en el Home Page con el idioma "<Idioma>"
+  Scenario Outline: "<Escenario>"
+    Given El Usuario se logea en el Page Constancias Fiscales Banco con el idioma "<Idioma>"
     When El Usuario selecciona el Rol "<Rol>"
-    And El Usuario ingresa los datos requeridos para descargar la constancia "<Datos>"
+    And El Usuario ingresa los Datos requeridos para descargar la correspondiente "<pDatos>"
     Then El Sistema muestra en pantalla el mensaje: "mensaje del sistema"
     Examples:
-    |Escenario                                            |Idioma |Rol                  |Datos                                            |
+    |Escenario                                            |Idioma |Rol                  |pDatos                                           |
     |SC_003_01_ConsultaYDescargaClienteBancoIngles        |Ingles |Bank Client          |pNumCliente & pContrasenia                       |
     |SC_003_02_ConsultaYDescargaClienteBancoEspañol       |Español|Cliente banco        |pNumCliente & pContrasenia                       |
     |SC_003_03_ConsultayDescargaClienteCasaDeBolsaIngles  |Ingles |Cliente Casa de Bolsa|pNumContrato & pContrasenia                      |

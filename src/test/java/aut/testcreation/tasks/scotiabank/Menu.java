@@ -16,57 +16,93 @@ public class Menu extends SeleniumWrapper {
         super(driver);
     }
     public static void ClavePersonal() throws IOException, InvalidFormatException, AWTException {
-        clickear(XXX); //click btn-Menu
-        seleccionarOpcionPorTexto(XXX, "Cambio de Clave");
-        escribirEnInput(XXX, "Num de usuario");
-        escribirEnInput(XXX, "clave actual");
-        escribirEnInput(XXX, "clave nueva");
-        escribirEnInput(XXX, "confirmar clave nueva");
+        //clickear(XXX); //click btn-Menu
+        //seleccionarOpcionPorTexto(XXX, "Cambio de Clave");
+        //escribirEnInput(XXX, "Num de usuario");
+        //escribirEnInput(XXX, "clave actual");
+        //escribirEnInput(XXX, "clave nueva");
+        //escribirEnInput(XXX, "confirmar clave nueva");
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
     }
-    public static void cambioImagenvalida(String pMenu, String pDatos) throws IOException, InvalidFormatException, AWTException {
-        clickear(XXX); //click btn-Menu
-        seleccionarOpcionPorTexto(XXX, pMenu);
-        escribirEnInput(XXX, pDatos);
-        clickear(XXX); //click btn-Cerrar
+    public static void IntentarCambiarClave() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
     }
-    public static void cambioImagenInvalido(String pMenu, String pDatos, String pPathImg) throws IOException, InvalidFormatException, AWTException {
-        clickear(XXX); //click btn-Menu
-        seleccionarOpcionPorTexto(XXX, pMenu);
-        escribirEnInput(XXX, pDatos);
-        clickear(XXX); //click btn-Cerrar
-        clickear(XXX); //click btn-Aceptar
-        obtenerTexto(XXX); //capturar frase
-        insertarArchivo(XXX, pPathImg);
+    public static void ClavePersonalIncorrecta() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
     }
-    public static void cambioMail(String pMenu, String pMail, String pCiudad, String pTelefono, String pExtension, String pContrasenia) throws IOException, InvalidFormatException, AWTException {
-        clickear(XXX); //click btn-Menu
-        seleccionarOpcionPorTexto(XXX, pMenu);
-        escribirEnInput(XXX, pMail);
-        escribirEnInput(XXX, pCiudad);
-        escribirEnInput(XXX, pTelefono);
-        escribirEnInput(XXX, pExtension);
-        escribirEnInput(XXX, pContrasenia);
-        clickear(XXX); //click btn-modificar
-        clickear(XXX); // click btn-aceptar
+    public static void cambioImagenvalida() throws IOException, InvalidFormatException, AWTException {
+        //clickear(XXX); //click btn-Menu
+        //seleccionarOpcionPorTexto(XXX, pMenu);
+        //escribirEnInput(XXX, pDatos);
+        //clickear(XXX); //click btn-Cerrar
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
     }
-    public static void ingresarToken(String pToken) throws IOException, InvalidFormatException, AWTException {
-        escribirEnInput(XXX, pToken);
-        clickear(XXX); // click btn-Regresar
+    public static void cambioImagenInvalido() throws IOException, InvalidFormatException, AWTException {
+        //clickear(XXX); //click btn-Menu
+        //seleccionarOpcionPorTexto(XXX, pMenu);
+        //escribirEnInput(XXX, pDatos);
+        //clickear(XXX); //click btn-Cerrar
+        //clickear(XXX); //click btn-Aceptar
+        //obtenerTexto(XXX); //capturar frase
+        //insertarArchivo(XXX, pPathImg);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void cambioMail() throws IOException, InvalidFormatException, AWTException {
+        //clickear(XXX); //click btn-Menu
+        //seleccionarOpcionPorTexto(XXX, pMenu);
+        //escribirEnInput(XXX, pMail);
+        //escribirEnInput(XXX, pCiudad);
+        //escribirEnInput(XXX, pTelefono);
+        //escribirEnInput(XXX, pExtension);
+        //escribirEnInput(XXX, pContrasenia);
+        //clickear(XXX); //click btn-modificar
+        //clickear(XXX); // click btn-aceptar
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void CambioMailConToken() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
     }
 
-    public static void CambioPreguntaSecreta(String pPreguntaSecreta, String pRespuesta, String pConfirRta) throws IOException, InvalidFormatException, AWTException {
-        escribirEnInput(XXX, pPreguntaSecreta);
-        escribirEnInput(XXX, pRespuesta);
-        escribirEnInput(XXX, pConfirRta);
-        clickear(XXX); // click btn-Regresar
+    public static void CambioPreguntaSecreta() throws IOException, InvalidFormatException, AWTException {
+        //escribirEnInput(XXX, pPreguntaSecreta);
+        //escribirEnInput(XXX, pRespuesta);
+        //escribirEnInput(XXX, pConfirRta);
+        //clickear(XXX); // click btn-Regresar
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
     }
 
-    public static void RegistarToken(String pDatos, String pCaptcha) throws IOException, InvalidFormatException, AWTException {
-        escribirEnInput(XXX, pDatos);
-        escribirEnInput(XXX, pCaptcha);
-        clickear(XXX); // click btn-Regresar
+    public static void RegistarToken() throws IOException, InvalidFormatException, AWTException {
+        //escribirEnInput(XXX, pDatos);
+        //escribirEnInput(XXX, pCaptcha);
+        //clickear(XXX); // click btn-Regresar
     }
     public static void seleccionarRol() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void seleccionarFechas() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void seleccionarFechaFinal() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void listadoBalanzasEmpresariales() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
     }
 }

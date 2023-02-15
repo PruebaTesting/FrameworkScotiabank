@@ -17,8 +17,6 @@ Feature:
 
   Scenario: SC_006_04_ConsultaUnoEspecificoDeXmlTsys
     Given El Usuario se loguea en la pantalla Consulta XML´s TSYS
-    When El Usuario hace la consulta sin RFC receptor
-    Then El Sistema muestra en pantalla la lista de los xml s
 
   Scenario: SC_006_05_ConsultaXmlTsysCon2RFCReceptorConFechas
     Given El Usuario se loguea en la pantalla Consulta XML´s TSYS
@@ -42,12 +40,12 @@ Feature:
 
   Scenario: SC_006_09_ValidarComboFechasInicioYFinalConsultaXMLsTSYS
     Given El Usuario se loguea en la pantalla Consulta XML´s TSYS
-    When El Usuario selecciona las fechas
+    When El Usuario selecciona la fecha Final
     Then El Sistema muestra en pantalla la lista de los xml s
 
   Scenario: SC_006_10_IngresoACMEUsuarioConUnRolAclaradorEstadosdeCuenta
     Given El Usuario se loguea en el Home Page
-    When El Usuario selecciona el Rol "pRol"
+    When El Usuario selecciona el Rol de cuenta "pRol"
     Then El Sistema muestra en pantalla la pantalla de Administración de XML´s TSYS
 
   Scenario: SC_006_11_ValidarLogPrecargaDeInformación
@@ -102,7 +100,7 @@ Feature:
 
   Scenario: SC_006_21_IngresarAlSitioConContraseñaUsuarioConTodosLosRoles
     Given El Usuario se loguea en el Home Page
-    When El Usuario selecciona el Rol "pRol"
+    When El Usuario selecciona el Rol de cuenta "pRol"
     Then El Sistema muestra en pantalla la pantalla de Administración de XML´s TSYS
 
   Scenario: SC_006_22_GeneraciónDeXmlAuxiliarDeFoliosConNúmeroDeOrdenTodosLosAplicativos
@@ -112,7 +110,7 @@ Feature:
 
   Scenario: SC_006_23_ListadoDeXmlConsultaGeneral
     Given El Usuario se loguea en el Home Page
-    When El Usuario selecciona las opciones de información
+    When El Usuario selecciona las opciones de Generación de XML
     Then El Sistema genera el XML correctamente
 
   Scenario: SC_006_24_ListadoDeBalanzasConsultaGeneralDeBalanzas
