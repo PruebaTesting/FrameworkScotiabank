@@ -17,7 +17,12 @@ public class Login extends SeleniumWrapper {
         //navegarURL("");
         //seleccionarOpcionPorTexto(XXX ,"pIdioma");
         reporte.reportarEvento("", true, false);
-
+    }
+    public static void ingresarPageConsulta() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
     }
     public static void registrarse() throws IOException, InvalidFormatException, AWTException {
         //navegarURL();

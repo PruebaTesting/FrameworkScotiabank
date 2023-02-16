@@ -45,5 +45,26 @@ public class SCR_004_Scotiatrade_Stepdefs extends CucumberBaseTestRunner impleme
         And("El Usuario ingresa los datos para registrar número de Token", () -> {
             Menu.RegistarToken();
         });
+
+//------------------------------------------------------------------------------------------------
+
+        Given("El Usuario ingresa al page de Registro de Usuario", () -> {
+            Login.ingresarPageConsulta();
+        });
+        When("El Usuario hace la consulta de Cartas Confirmadas", () -> {
+            Menu.cartasConfirmacion();
+        });
+        Then("El Sistema muestra en pantalla la carta confirmación", () -> {
+            Validar.cartaConfirmacion();
+        });
+        When("El Usuario hace la consulta de Constancias Fiscales", () -> {
+            Menu.constanciasFiscales();
+        });
+        Then("El Sistema muestra en pantalla las constancias fiscales disponibles", () -> {
+            Validar.constanciasFiscalesDisponibles();
+        });
+        When("El Usuario hace la consulta de Navegación superior", () -> {
+            Menu.navegacionSuperior();
+        });
     }
 }
