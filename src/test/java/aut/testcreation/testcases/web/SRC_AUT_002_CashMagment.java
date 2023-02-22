@@ -309,6 +309,80 @@ public class SRC_AUT_002_CashMagment extends SeleniumTestBase {
             Administrar.consultarCuentasInversion("pContrasenia", "pToken", "pFormato");
         }
 
+        @ParameterizedTest
+        @Tag("fast")
+        @CsvSource({"TC_002_50_administradorConsultaCuentasChequeUSDPDF",
+                "TC_002_51_administradorConsultaCuentasChequeUSDXML"})
+        void TC_002_50y51_test(String methodName)throws IOException, InvalidFormatException, AWTException{
+            getTestName(methodName);
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Administrar.consultarCuentasChequesUSD("pContrasenia", "pToken", "pFormato");
+        }
+        @ParameterizedTest
+        @Tag("fast")
+        @CsvSource({"TC_002_52_administradorConsultaCuentasChequeMXNXML",
+                "TC_002_53_administradorConsultaCuentasChequeMXNPDF"})
+        void TC_002_52y53_test(String methodName)throws IOException,InvalidFormatException,AWTException{
+            getTestName(methodName);
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Administrar.consultarCuentasChequesMXN("pContrasenia", "pToken", "pFormato");
+        }
+        @Test
+        @Tag("fast")
+        void TC_002_54_administradorConsultaCuentasLineaOperativaCSV(String methodName)throws IOException,InvalidFormatException,AWTException{
+            getTestName(methodName);
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Administrar.consultarCuentasLineaOperativa("pContrasenia", "pToken", "pFormato");
+        }
+        @Test
+        @Tag("fast")
+        void TC_002_55_administradorConsultaCuentasPrestamosPersonalesTXT(String methodName)throws IOException,InvalidFormatException,AWTException {
+            getTestName(methodName);
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Administrar.consultarCuentasPrestamosPersonales("pContrasenia", "pToken", "pFormato");
+        }
+        @Test
+        @Tag("fast")
+        void TC_002_56_administradorConsultaCuentasFondosInversionCSV(String methodName)throws IOException,InvalidFormatException,AWTException {
+            getTestName(methodName);
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Administrar.consultarCuentasFondosInversion("pContrasenia", "pToken", "pFormato");
+        }
+        @Test
+        @Tag("fast")
+        void TC_002_57_administradorConsultaCreditosHipotecariosTXT(String methodName)throws IOException,InvalidFormatException,AWTException {
+            getTestName(methodName);
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Administrar.consultarCreditosHipotecarios("pContrasenia", "pToken", "pFormato");
+        }
+        @Test
+        @Tag("fast")
+        void TC_002_58_administradorConsultaCuentasInversionCSV(String methodName)throws IOException,InvalidFormatException,AWTException {
+            getTestName(methodName);
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Administrar.consultarCuentasInversion("pContrasenia", "pToken", "pFormato");
+        }
+        @Test
+        @Tag("fast")
+        void TC_002_59_administradorConsultaCuentasTDCMXNTXT(String methodName)throws IOException,InvalidFormatException,AWTException {
+            getTestName(methodName);
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Administrar.consultarCuentasTDCMXNTXT("pContrasenia", "pToken", "pFormato");
+        }
+        @Test
+        @Tag("fast")
+        void TC_002_60_administradorConsultaCuentasChequeUSDCSV(String methodName)throws IOException,InvalidFormatException,AWTException {
+            getTestName(methodName);
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Administrar.consultarCuentasChequesUSD("pContrasenia", "pToken", "pFormato");
+        }
+        @Test
+        @Tag("fast")
+        void TC_002_61_administradorConsultaCuentasChequeMXNTXT(String methodName)throws IOException,InvalidFormatException,AWTException {
+            getTestName(methodName);
+            Login.correcto("pUsuario", "pContrasenia", "pToken");
+            Administrar.consultarCuentasChequesMXN("pContrasenia", "pToken", "pFormato");
+        }
         @AfterEach
         void afterConsultas() {
             assertTrue(Comprobar.formatoDescarga());

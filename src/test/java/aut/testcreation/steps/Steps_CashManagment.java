@@ -166,14 +166,34 @@ public class Steps_CashManagment extends CucumberBaseTestRunner implements En {
                     Administrar.consultarFondosInversion(lDatos[0], lDatos[1], lDatos[2]);
                     break;
                 }
-                case "Créditos Hipotecarios": {
+                case "Creditos Hipotecarios": {
                     Administrar.consultarCreditosHipotecarios(lDatos[0], lDatos[1], lDatos[2]);
                     break;
                 }
-                case "Cuentas de Inversión": {
+                case "Cuentas de Inversion": {
                     Administrar.consultarCuentasInversion(lDatos[0], lDatos[1], lDatos[2]);
                     break;
                 }
+                case "Cuentas Cheques USD": {
+                    Administrar.consultarCuentasChequesUSD(lDatos[0], lDatos[1], lDatos[2]);
+                    break;
+                }
+                case "Cuentas Cheques MXN ":{
+                    Administrar.consultarCuentasChequesMXN(lDatos[0], lDatos[1], lDatos[2]);
+                }
+                case "Cuentas Linea Operativa":{
+                    Administrar.consultarCuentasLineaOperativa(lDatos[0], lDatos[1], lDatos[2]);
+                }
+                case "Cuentas Prestamos Personales":{
+                    Administrar.consultarCuentasPrestamosPersonales(lDatos[0], lDatos[1], lDatos[2]);
+                }
+                case "Cuentas Fondos Inversion":{
+                    Administrar.consultarCuentasFondosInversion(lDatos[0], lDatos[1], lDatos[2]);
+                }
+                case "Cuentas TDC MXN":{
+                    Administrar.consultarCuentasTDCMXNTXT(lDatos[0], lDatos[1], lDatos[2]);
+                }
+
             }
         });
     }

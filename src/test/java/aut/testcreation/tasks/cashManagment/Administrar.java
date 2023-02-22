@@ -48,4 +48,24 @@ public class Administrar extends SeleniumWrapper {
     public static void consultarCuentasInversion(String pContrasenia, String pToken, String pFormato) {
         System.out.println("Administrar.consultarCuentasInversion");
     }
+    public static void consultarCuentasChequesUSD(String pContrasenia, String pToken, String pFormato){
+        System.out.println("Administrar.consultarCuentasChequesUSD");
+    }
+    public static void consultarCuentasChequesMXN(String pContrasenia, String pToken, String pFormato){
+        System.out.println("Administrar.consultarCuentasChequesMXN");
+    }
+    public static void consultarCuentasLineaOperativa(String pContrasenia, String pToken, String pFormato){
+        System.out.println("Administrar.consultarCuentasLineaOperativa");
+    }
+    public static void consultarCuentasPrestamosPersonales(String pContrasenia, String pToken, String pFormato) {
+        System.out.println("Administrar.consultarCuentasPrestamosPersonales");
+    }
+    public static void consultarCuentasFondosInversion(String pContrasenia, String pToken, String pFormato) {
+        System.out.println("Administrar.consultarCuentasFondosInversion");
+    }
+    public static void consultarCuentasTDCMXNTXT(String pContrasenia, String pToken, String pFormato) {
+        System.out.println("Administrar.consultarCuentasTDCMXNTXT");
+
+    }
+
 }

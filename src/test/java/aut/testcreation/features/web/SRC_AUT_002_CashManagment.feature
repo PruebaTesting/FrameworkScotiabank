@@ -77,13 +77,25 @@ Feature: Conjunto de Test para validar el funcionamiento correcto de los flujos 
     When El Usuario Administrador consulta el resumen de "<Consulta>" con los datos "<Datos>"
     Then El Sistema comprueba que la descarga se hizo en el formato correspondiente
     Examples:
-      | Escenario                                              | Consulta              | Datos                          |
-      | TC_002_41_administradorConsultaLineaOperativaXML       | Linea Operativa       | pContrasenia, pToken, pFormato |
-      | TC_002_42_administradorConsultaLineaOperativaPDF       | Linea Operativa       | pContrasenia, pToken, pFormato |
-      | TC_002_43_administradorConsultaPrestamosPersonales     | Prestamos Personales  | pContrasenia, pToken           |
-      | TC_002_44_administradorConsultaFondosInversionXML      | Fondos de Inversión   | pContrasenia, pToken, pFormato |
-      | TC_002_45_administradorConsultaFondosInversionPDF      | Fondos de Inversión   | pContrasenia, pToken, pFormato |
-      | TC_002_46_administradorConsultaCreditosHipotecariosXML | Créditos Hipotecarios | pContrasenia, pToken, pFormato |
-      | TC_002_47_administradorConsultaCreditosHipotecariosPDF | Créditos Hipotecarios | pContrasenia, pToken, pFormato |
-      | TC_002_48_administradorConsultaCuentasInversionXML     | Cuentas de Inversión  | pContrasenia, pToken, pFormato |
-      | TC_002_49_administradorConsultaCuentasInversionPDF     | Cuentas de Inversión  | pContrasenia, pToken, pFormato |
+      | Escenario                                                    | Consulta                     | Datos                          |
+      | TC_002_41_administradorConsultaLineaOperativaXML             | Linea Operativa              | pContrasenia, pToken, pFormato |
+      | TC_002_42_administradorConsultaLineaOperativaPDF             | Linea Operativa              | pContrasenia, pToken, pFormato |
+      | TC_002_43_administradorConsultaPrestamosPersonales           | Prestamos Personales         | pContrasenia, pToken           |
+      | TC_002_44_administradorConsultaFondosInversionXML            | Fondos de Inversión          | pContrasenia, pToken, pFormato |
+      | TC_002_45_administradorConsultaFondosInversionPDF            | Fondos de Inversión          | pContrasenia, pToken, pFormato |
+      | TC_002_46_administradorConsultaCreditosHipotecariosXML       | Creditos Hipotecarios        | pContrasenia, pToken, pFormato |
+      | TC_002_47_administradorConsultaCreditosHipotecariosPDF       | Creditos Hipotecarios        | pContrasenia, pToken, pFormato |
+      | TC_002_48_administradorConsultaCuentasInversionXML           | Cuentas de Inversion         | pContrasenia, pToken, pFormato |
+      | TC_002_49_administradorConsultaCuentasInversionPDF           | Cuentas de Inversion         | pContrasenia, pToken, pFormato |
+      | TC_002_50_administradorConsultaCuentasChequeUSDPDF           | Cuentas Cheques USD          | pContrasenia, pToken, pFormato |
+      | TC_002_51_administradorConsultaCuentasChequeUSDXML           | Cuentas Cheques USD          | pContrasenia, pToken, pFormato |
+      | TC_002_52_administradorConsultaCuentasChequeMXNXML           | Cuentas Cheques MXN          | pContrasenia, pToken, pFormato |
+      | TC_002_53_administradorConsultaCuentasChequeMXNPDF           | Cuentas Cheques MXN          | pContrasenia, pToken, pFormato |
+      | TC_002_54_administradorConsultaCuentasLineaOperativaCSV      | Cuentas Linea Operativa      | pContrasenia, pToken, pFormato |
+      | TC_002_55_administradorConsultaCuentasPrestamosPersonalesTXT | Cuentas Prestamos Personales | pContrasemia, pToken, pFormato |
+      | TC_002_56_administradorConsultaCuentasFondosInversionCSV     | Cuentas Fondos Inversion     | pContrasenia, pToken, pFormato |
+      | TC_002_57_administradorConsultaCreditosHipotecariosTXT       | Creditos Hipotecarios        | PContrasenia, pToken, pFormato |
+      | TC_002_58_administradorConsultaCuentasInversionCSV           | Cuentas de Inversion         | pContrasenia, pToken, pFormato |
+      | TC_002_59_administradorConsultaCuentasTDCMXNTXT              | Cuentas TDC MXN              | pContrasenia, pToken, pFormato |
+      | TC_002_60_administradorConsultaCuentasChequeUSDCSV           | Cuentas Cheques USD          | pContrasenia, pToken, pFormato |
+      | TC_002_61_administradorConsultaCuentasChequeMXNTXT           | Cuentas Cheques MXN          | pContrasenia, pToken, pFormato |
