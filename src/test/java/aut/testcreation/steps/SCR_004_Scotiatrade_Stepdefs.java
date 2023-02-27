@@ -66,5 +66,14 @@ public class SCR_004_Scotiatrade_Stepdefs extends CucumberBaseTestRunner impleme
         When("El Usuario hace la consulta de Navegación superior", () -> {
             Menu.navegacionSuperior();
         });
+        When("El Usuario hace la consulta de Guia Diaria", () -> {
+            Menu.guiaDiaria();
+        });
+        When("El Usuario hace la consulta de Información de Mercado", () -> {
+            Menu.informacionDeMercado();
+        });
+        When("El Usuario hace la consulta de Manual de Operacion", () -> {
+            Menu.manualDeOperacion();
+        });
     }
 }

@@ -20,8 +20,4 @@ public class Validar extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         return false;
     }
-
-
-
-
 }

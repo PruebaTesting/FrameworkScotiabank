@@ -118,4 +118,13 @@ public class Menu extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
     }
+    public static void guiaDiaria() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void informacionDeMercado() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void manualDeOperacion() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
 }

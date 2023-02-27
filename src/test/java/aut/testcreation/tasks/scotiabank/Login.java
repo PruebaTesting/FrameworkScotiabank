@@ -34,7 +34,7 @@ public class Login extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
     }
     public static void ingresarScotiatrade() throws IOException, InvalidFormatException, AWTException {
-        //navegarURL("XXX");
+        navegarURL("XXX");
         //clickear(XXX);
         //escribirEnInput(XXX, "se escribe num. usuario");
         //escribirEnInput(XXX, "se escribe num. usuario");
