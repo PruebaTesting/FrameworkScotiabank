@@ -55,4 +55,11 @@ public class Login extends SeleniumWrapper {
     public static void InicioSesion() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
     }
+    public static void flujoNavegacionSuperior() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void loginFail() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
 }

@@ -24,4 +24,13 @@ public class Consulta extends SeleniumWrapper {
     public static void seleccionarFecha() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
     }
+    public static void estadoDeCuenta() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void estadoDeCuentaXML() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
 }

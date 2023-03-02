@@ -31,6 +31,7 @@ public class Stepdefs_ContabilidadElectronica extends CucumberBaseTestRunner imp
         When("El Usuario selecciona las fechas", () -> {
         });
         Given("El Usuario se loguea en el Home Page", () -> {
+            Login.ingresar();
         });
         /*When("El Usuario selecciona el Rol {string}", (String arg0) -> {
         });*/
@@ -39,6 +40,7 @@ public class Stepdefs_ContabilidadElectronica extends CucumberBaseTestRunner imp
         When("El Usuario consulta la información Tipo de Log", () -> {
         });
         Then("El Sistema muestra en pantalla la información requerida", () -> {
+            Validar.pantallaFinal();
         });
         When("El Usuario selecciona las opciones de información", () -> {
         });

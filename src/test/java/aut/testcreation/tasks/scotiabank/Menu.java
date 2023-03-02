@@ -118,4 +118,54 @@ public class Menu extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
     }
+    public static void consultaRequerida() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void cambioConstrasenia() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void operarMercadosCapitales() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void ordenDeCompra() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void ordenDeVenta() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void depositoEfectivo() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void retiroDeEfectivo() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void operacionEfectivo() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void fondosDeInversion() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void fondoDeInversionNoDisponible() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void cambioDeMail() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void cambioDeMailSinDisplay() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void ingresarDatos() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
 }
