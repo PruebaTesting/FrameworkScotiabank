@@ -118,6 +118,7 @@ public class Menu extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
     }
+
     public static void consultaRequerida() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
@@ -166,6 +167,15 @@ public class Menu extends SeleniumWrapper {
     public static void ingresarDatos() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
+
+    public static void guiaDiaria() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void informacionDeMercado() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void manualDeOperacion() throws IOException, InvalidFormatException, AWTException {
+
         reporte.reportarEvento("", true, false);
     }
 }

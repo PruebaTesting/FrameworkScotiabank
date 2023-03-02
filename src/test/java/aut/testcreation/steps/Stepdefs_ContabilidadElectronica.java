@@ -40,7 +40,11 @@ public class Stepdefs_ContabilidadElectronica extends CucumberBaseTestRunner imp
         When("El Usuario consulta la información Tipo de Log", () -> {
         });
         Then("El Sistema muestra en pantalla la información requerida", () -> {
+
             Validar.pantallaFinal();
+
+            Validar.pantalla();
+
         });
         When("El Usuario selecciona las opciones de información", () -> {
         });
