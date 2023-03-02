@@ -34,7 +34,7 @@ public class Login extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
     }
     public static void ingresarScotiatrade() throws IOException, InvalidFormatException, AWTException {
-        //navegarURL("XXX");
+        navegarURL("XXX");
         //clickear(XXX);
         //escribirEnInput(XXX, "se escribe num. usuario");
         //escribirEnInput(XXX, "se escribe num. usuario");
@@ -53,6 +53,13 @@ public class Login extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
     }
     public static void InicioSesion() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void flujoNavegacionSuperior() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
+    public static void loginFail() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
     }
 }
