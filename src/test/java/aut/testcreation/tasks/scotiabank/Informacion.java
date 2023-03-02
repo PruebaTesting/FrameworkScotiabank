@@ -34,4 +34,7 @@ public class Informacion extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
     }
+    public static void aceptarPopUp() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+    }
 }

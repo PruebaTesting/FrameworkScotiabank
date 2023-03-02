@@ -28,4 +28,16 @@ public class Datos extends SeleniumWrapper {
         //clickear(XXX); //btn download
         reporte.reportarEvento("", true, false);
     }
+    public static void cambiarDatos() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
+    public static void cambiarContrasenia() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+    }
 }
