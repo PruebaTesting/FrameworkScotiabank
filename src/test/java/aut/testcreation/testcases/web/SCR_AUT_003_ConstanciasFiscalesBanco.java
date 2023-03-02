@@ -7,16 +7,13 @@ import aut.testcreation.tasks.scotiabank.Rol;
 import aut.testcreation.tasks.scotiabank.Validar;
 import framework.engine.selenium.SeleniumTestBase;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 import java.awt.*;
 import java.io.IOException;
 
-import static org.junit.Assert.*;
 
-
-public class SRC_AUT_003_ConstanciasFiscalesBanco extends SeleniumTestBase {
+public class SCR_AUT_003_ConstanciasFiscalesBanco extends SeleniumTestBase {
 
     @Test
     void TC_003_01_ConsultaYDescargaClienteBancoIngles() throws IOException, InvalidFormatException, AWTException {

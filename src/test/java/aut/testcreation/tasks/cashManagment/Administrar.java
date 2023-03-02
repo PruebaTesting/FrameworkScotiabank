@@ -54,18 +54,29 @@ public class Administrar extends SeleniumWrapper {
     public static void consultarCuentasChequesMXN(String pContrasenia, String pToken, String pFormato){
         System.out.println("Administrar.consultarCuentasChequesMXN");
     }
-    public static void consultarCuentasLineaOperativa(String pContrasenia, String pToken, String pFormato){
+    public static void consultarCuentasLineaOperativa(String pManual, String pFormato, String pTipoSeparador){
         System.out.println("Administrar.consultarCuentasLineaOperativa");
     }
-    public static void consultarCuentasPrestamosPersonales(String pContrasenia, String pToken, String pFormato) {
+    public static void consultarCuentasPrestamosPersonales(String pManual, String pFormato, String pTipoSeparador) {
         System.out.println("Administrar.consultarCuentasPrestamosPersonales");
     }
-    public static void consultarCuentasFondosInversion(String pContrasenia, String pToken, String pFormato) {
+    public static void consultarCuentasFondosInversion(String pManual, String pFormato, String pTipoSeparador) {
         System.out.println("Administrar.consultarCuentasFondosInversion");
     }
-    public static void consultarCuentasTDCMXNTXT(String pContrasenia, String pToken, String pFormato) {
+    public static void consultarCreditosHipotecariosTXT(String pManual, String pFormato, String pTipoSeparador) {
+        System.out.println("Administrar.consultarCreditosHipotecariosTXT");
+    }
+    public static void consultarCuentasInversionCSV(String pManual, String pFormato, String pTipoSeparador) {
+        System.out.println("Administrar.consultarCuentasInversionCSV");
+    }
+    public static void consultarCuentasTDCMXNTXT(String pManual, String pFormato, String pTipoSeparador) {
         System.out.println("Administrar.consultarCuentasTDCMXNTXT");
-
+    }
+    public static void consultarCuentasChequesUSDCSV(String pManual, String pFormato, String pTipoSeparador){
+        System.out.println("Administrar.consultarCuentasChequesUSDCSV");
+    }
+    public static void consultarCuentasChequesMXNTXT(String pManual, String pFormato, String pTipoSeparador){
+        System.out.println("Administrar.consultarCuentasChequesMXNTXT");
     }
 
 }
