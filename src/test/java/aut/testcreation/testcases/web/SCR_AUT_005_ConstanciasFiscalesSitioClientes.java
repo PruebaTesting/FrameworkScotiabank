@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import static org.junit.Assert.*;
 import java.awt.*;
 import java.io.IOException;
+import static framework.engine.selenium.GetTestName.*;
 
 import org.junit.Assert;
 

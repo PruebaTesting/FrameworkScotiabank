@@ -4,8 +4,8 @@ import framework.engine.bdd.CucumberBaseTestRunner;
 import io.cucumber.java8.En;
 import aut.testcreation.tasks.scotiabank.*;
 
-public class Stepdefs_SRC_AUT_003_ConstanciasFiscalesBanco extends CucumberBaseTestRunner implements En{
-    public Stepdefs_SRC_AUT_003_ConstanciasFiscalesBanco() {
+public class Steps_ConstanciasFiscalesBanco extends CucumberBaseTestRunner implements En{
+    public Steps_ConstanciasFiscalesBanco() {
         Given("El Usuario se logea en el Home Page con el idioma {string}", (String pIdioma) -> {
             Login.FuncionUsuario(pIdioma);
         });

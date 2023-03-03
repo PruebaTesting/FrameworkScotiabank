@@ -166,12 +166,212 @@ public class Steps_CashManagment extends CucumberBaseTestRunner implements En {
                     Administrar.consultarFondosInversion(lDatos[0], lDatos[1], lDatos[2]);
                     break;
                 }
-                case "Créditos Hipotecarios": {
+                case "Creditos Hipotecarios": {
                     Administrar.consultarCreditosHipotecarios(lDatos[0], lDatos[1], lDatos[2]);
                     break;
                 }
-                case "Cuentas de Inversión": {
+                case "Cuentas de Inversion": {
                     Administrar.consultarCuentasInversion(lDatos[0], lDatos[1], lDatos[2]);
+                    break;
+                }
+                case "Cuentas Cheques USD": {
+                    Administrar.consultarCuentasChequesUSD(lDatos[0], lDatos[1], lDatos[2]);
+                    break;
+                }
+                case "Cuentas Cheques MXN ":{
+                    Administrar.consultarCuentasChequesMXN(lDatos[0], lDatos[1], lDatos[2]);
+                }
+
+
+            }
+        });
+        When("El Usuario Administrador consulta la cuenta de {string} con los Datos de {string}", (String pConsulta, String pDatos) -> {
+            String[] lDatos = pDatos.split(", ");
+
+            switch (pConsulta) {
+
+                    case "Cuentas Linea Operativa":{
+                        Administrar.consultarCuentasLineaOperativa(lDatos[0], lDatos[1], lDatos[2]);
+                        break;
+                    }
+                    case "Cuentas Prestamos Personales":{
+                        Administrar.consultarCuentasPrestamosPersonales(lDatos[0], lDatos[1], lDatos[2]);
+                        break;
+                    }
+                    case "Cuentas Fondos Inversion":{
+                        Administrar.consultarCuentasFondosInversion(lDatos[0], lDatos[1], lDatos[2]);
+                        break;
+                    }
+                    case "Creditos Hipotecarios":{
+                        Administrar.consultarCreditosHipotecariosTXT(lDatos[0], lDatos[1], lDatos[2]);
+                        break;
+                    }
+                    case "Cuentas de Inversion": {
+                        Administrar.consultarCuentasInversionCSV(lDatos[0], lDatos[1], lDatos[2]);
+                        break;
+                    }
+                    case "Cuentas TDC MXN":{
+                        Administrar.consultarCuentasTDCMXNTXT(lDatos[0], lDatos[1], lDatos[2]);
+                        break;
+                    }
+                case "Cuentas Cheques USD": {
+                    Administrar.consultarCuentasChequesUSDCSV(lDatos[0], lDatos[1], lDatos[2]);
+                    break;
+                }
+                case "Cuentas Cheques MXN ":{
+                    Administrar.consultarCuentasChequesMXN(lDatos[0], lDatos[1], lDatos[2]);
+                }
+
+                }
+        });
+        When("El Usuario Administrador consulta el contrato o credito de {string}", (String pConsulta) -> {
+
+            switch (pConsulta){
+                case "Credito Linea Operativa":{
+                    Validar.consultarCuentasCreditosLineaOperativa();
+                    break;
+                }
+                case "Credito Prestamos Personales":{
+                    Validar.consultarCuentasCreditosPrestamosPersonales();
+                    break;
+                }
+                case "Contrato Fondos Inversion":{
+                    Validar.consultarCuentasContratoFondosInversion();
+                    break;
+                }
+                case "Credito Hipotecarios":{
+                    Validar.consultarCreditosHipotecarios();
+                    break;
+                }
+                case "Contrato Inversion":{
+                    Validar.consultarCuentasContratoInversion();
+                    break;
+                }
+            }
+        });
+        When("El Usuario Administrador consulta la Tarjeta de Credito de {string}", (String pConsulta) -> {
+            switch (pConsulta){
+                case "Numero Tarjeta":{
+                    Validar.consultarCuentasTDCMXNPDF();
+                    break;
+                }
+            }
+        });
+        When("El Usuario Admiministrador consulta Cheques de {string}", (String pConsulta) -> {
+            switch (pConsulta){
+                case "Cheques USD":{
+                    Validar.consultarCuentasChequesUSD();
+                    break;
+                }
+                case "Cheques MXN":{
+                    Validar.consultarCuentasChequesMXN();
+                    break;
+                }
+            }
+        });
+        When("El Usuario Administrados consulta cuentas Consolidadas de {string}", (String pConsulta) -> {
+            switch (pConsulta){
+                case "Linea Operativa Consolidado":{
+                    Validar.consultarCuentasLineaOperativaConsolidado();
+                    break;
+                }
+                case "Prestamos Personales Consolidado":{
+                    Validar.consultarCuentasPrestamosPersonalesConsolidado();
+                    break;
+                }
+                case "Fondos Inversion Consolidado":{
+                    Validar.consultarCuentasFondosInversionConsolidado();
+                    break;
+                }
+                case "Creditos Hipotecarios Consolidado":{
+                    Validar.consultarCreditosHipotecariosConsolidado();
+                    break;
+                }
+                case "Contratos Inversion Consalidado":{
+                    Validar.consultarCuentasInversionesConsolidado();
+                    break;
+                }
+                case "Tarjeta Credito Consolidado":{
+                    Validar.consultarCuentasTDCMXNConsolidado();
+                    break;
+                }
+                case "Cheque USD Consolidado":{
+                    Validar.consultarCuentasChequesUSDConsolidado();
+                    break;
+                }
+                case "Cheque MXN Consolidado":{
+                    Validar.consultarCuentasChequesMXNConsolidado();
+                    break;
+                }
+            }
+        });
+        When("El Usuario Administrador consulte el resumen de {string}", (String pConsulta) -> {
+            switch (pConsulta){
+                case "Linea Operativa BD":{
+                    Validar.consultarCuentasLineaOperativaBD();
+                    break;
+                }
+                case "Prestamos Personales BD":{
+                    Validar.consultarCuentasPrestamosPersonalesBD();
+                }
+                case "Fondos Inversion BD":{
+                    Validar.consultarCuentasFondosInversionBD();
+                    break;
+                }
+                case "Creditos Hipotecarios BD":{
+                    Validar.consultarCreditosHipotecariosBD();
+                    break;
+                }
+                case "Cuentas Imversion BD":{
+                    Validar.consultarCuentasInversionBD();
+                    break;
+                }
+                case "Cuentas TDC MXN BD":{
+                    Validar.consultarCuentasTDCMXNBD();
+                    break;
+                }
+                case "Cuentas Cheques USD BD":{
+                    Validar.consultarCuentasChequesUSDBD();
+                    break;
+                }
+                case "Cuentas Cheque MXN BD ":{
+                    Validar.consultarCuentasChequeMXNBD();
+                    break;
+                }
+            }
+        });
+        When("El Usuario Administrador consulta cuentas consolidadas FM {string}", (String pConsultas) -> {
+            switch (pConsultas){
+                case "Linea Operativa FM":{
+                    Validar.consultarCuentasLineaOperativaFM();
+                    break;
+                }
+                case "Prestamos Personales FM ":{
+                    Validar.consultarCuentasPrestamosPersonalesFM();
+                    break;
+                }
+                case "Fondos Inverson FM":{
+                    Validar.consultarCuentasFondosInversonFM();
+                    break;
+                }
+                case "Credito Hipotecario FM":{
+                    Validar.consultarCreditoHipotecarioFM();
+                    break;
+                }
+                case "Cuentas Inversion FM":{
+                    Validar.consultarCuentasInversionFM();
+                    break;
+                }
+                case "Cuentas TDC MXN FM":{
+                    Validar.consultarCuentasTDCMXNFM();
+                    break;
+                }
+                case "Cuentas Cheque USD FM":{
+                    Validar.consultarCuentasChequesUSDFM();
+                    break;
+                }
+                case "Cuentas Cheques MXN FM":{
+                    Validar.consultarCuentasChequesMXNFM();
                     break;
                 }
             }

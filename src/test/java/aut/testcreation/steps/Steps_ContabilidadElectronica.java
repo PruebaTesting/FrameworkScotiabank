@@ -6,8 +6,8 @@ import aut.testcreation.tasks.scotiabank.Validar;
 import framework.engine.bdd.CucumberBaseTestRunner;
 import io.cucumber.java8.En;
 
-public class Stepdefs_ContabilidadElectronica extends CucumberBaseTestRunner implements En {
-    public Stepdefs_ContabilidadElectronica() {
+public class Steps_ContabilidadElectronica extends CucumberBaseTestRunner implements En {
+    public Steps_ContabilidadElectronica() {
         Given("El Usuario se loguea en la pantalla Consulta XML´s TSYS", () -> {
             Login.ingresar();
         });

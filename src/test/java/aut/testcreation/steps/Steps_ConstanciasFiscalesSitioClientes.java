@@ -4,9 +4,9 @@ import framework.engine.bdd.CucumberBaseTestRunner;
 import io.cucumber.java8.En;
 import aut.testcreation.tasks.ConstanciasFiscalesSitioCliente.*;
 
-public class Steps_005_ConstanciasFiscalesSitioClientes extends CucumberBaseTestRunner implements En {
+public class Steps_ConstanciasFiscalesSitioClientes extends CucumberBaseTestRunner implements En {
 
-    public Steps_005_ConstanciasFiscalesSitioClientes(){
+    public Steps_ConstanciasFiscalesSitioClientes(){
         Given("El Usuario se logea en el Page Constancias Fiscales Sitio Cliente con el idioma  {string}",(String pIdioma) ->{
             Login.FuncionUsuario(pIdioma);
         });

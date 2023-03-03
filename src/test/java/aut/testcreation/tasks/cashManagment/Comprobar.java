@@ -31,8 +31,14 @@ public class Comprobar extends SeleniumWrapper {
     }
 
     public static boolean formatoDescarga() {
-        System.out.println("Comrobar.formatoDescarga");
+        System.out.println("Comprobar.formatoDescarga");
         return true;
     }
+    public static boolean resultadoEsperado(){
+        System.out.println("comprobar.resultadoEsperado");
+        return true;
+    }
+
+
 
 }

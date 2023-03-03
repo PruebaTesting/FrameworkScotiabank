@@ -4,8 +4,8 @@ import aut.testcreation.tasks.scotiabank.*;
 import framework.engine.bdd.CucumberBaseTestRunner;
 import io.cucumber.java8.En;
 
-public class SCR_004_Scotiatrade_Stepdefs extends CucumberBaseTestRunner implements En {
-    public SCR_004_Scotiatrade_Stepdefs() {
+public class Steps_Scotiatrade extends CucumberBaseTestRunner implements En {
+    public Steps_Scotiatrade() {
         Given("El Usuario se logea en la Home Page de ScotiaTrade", () -> {
             Login.ingresarScotiatrade();
         });
