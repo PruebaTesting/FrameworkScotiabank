@@ -252,7 +252,7 @@ public class SCR_AUT_002_CashMagment extends SeleniumTestBase {
         }
 
         @AfterEach
-        void afterVisualizacionDetalles() {
+        void afterVisualizacionDetalles() throws IOException, InvalidFormatException, AWTException {
             assertTrue(Comprobar.visualizacionDetalles("pResultadoEsperado"));
         }
     }

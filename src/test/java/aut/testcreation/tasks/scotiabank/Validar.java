@@ -45,8 +45,7 @@ public class Validar extends SeleniumWrapper {
     }
     public static void ClickConoceMas() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
-
-
+    }
     public static void pantalla() throws IOException, InvalidFormatException, AWTException {
 
         reporte.reportarEvento("", true, false);

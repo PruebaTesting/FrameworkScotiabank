@@ -20,7 +20,7 @@ public class Login extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
-        System.out.println("Login.correcto");
+        //System.out.println("Login.correcto");
     }
 
     public static void confirmarAutenticacion(String pContrasenia, String pToken) throws IOException, InvalidFormatException, AWTException {

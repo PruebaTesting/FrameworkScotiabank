@@ -29,19 +29,97 @@ public class CrearBeneficiario extends SeleniumWrapper {
         System.out.println("CrearBeneficiario.pagoDeServiciosYFacturas");
     }
 
-    public static void personaMoralOtroBanco(String pNombrePerfil, String pNumeroCuenta, String pNumeroIdentificacion, String pNombreRazonSocial, String pEmail, String pNumeroTelefono, String pLimiteAbono) {
+    public static void personaMoralOtroBanco(String pNombrePerfil, String pNumeroCuenta, String pNumeroIdentificacion, String pNombreRazonSocial, String pEmail, String pNumeroTelefono, String pLimiteAbono) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         System.out.println("CrearBeneficiario.personaMoralOtroBanco");
     }
 
-    public static void personaMoralScotiabank(String pNombrePerfil, String pAilas, String pEmail, String pNumeroTelefono, String pLimiteAbono) {
+    public static void personaMoralScotiabank(String pNombrePerfil, String pAilas, String pEmail, String pNumeroTelefono, String pLimiteAbono) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         System.out.println("CrearBeneficiario.personaMoralScotiabank");
     }
 
-    public static void personaFisicaOtroBanco(String pNombrePerfil, String pNumCuenta, String pAlias, String pNumIdentificacion, String pNombre, String pAoellidoPaterno, String pApellidoMaterno, String pEmial, String pNumeroTelefono, String pLimiteAbono) {
+    public static void personaFisicaOtroBanco(String pNombrePerfil, String pNumCuenta, String pAlias, String pNumIdentificacion, String pNombre, String pAoellidoPaterno, String pApellidoMaterno, String pEmial, String pNumeroTelefono, String pLimiteAbono) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         System.out.println("CrearBeneficiario.personaFisicaOtroBanco");
     }
 
-    public static void personaFisicaScotiabank(String pNombrePerfil, String pNumCuenta, String pAlias, String pEmail, String pNumeroTelefono, String pLimiteAbono) {
+    public static void personaFisicaScotiabank(String pNombrePerfil, String pNumCuenta, String pAlias, String pEmail, String pNumeroTelefono, String pLimiteAbono) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         System.out.println("CrearBeneficiario.personaFisicaScotiabank");
     }
 
@@ -57,9 +135,21 @@ public class CrearBeneficiario extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
     }
 
-    public static void contribucionesFederales(String pTipoImpuesto, String pAlias) {
+    public static void contribucionesFederales(String pTipoImpuesto, String pAlias) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         System.out.println("CrearBeneficiario.contribucionesFederales");
     }
 
