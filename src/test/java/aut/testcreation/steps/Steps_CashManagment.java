@@ -178,7 +178,7 @@ public class Steps_CashManagment extends CucumberBaseTestRunner implements En {
                     Administrar.consultarCuentasChequesUSD(lDatos[0], lDatos[1], lDatos[2]);
                     break;
                 }
-                case "Cuentas Cheques MXN ":{
+                case "Cuentas Cheques MXN":{
                     Administrar.consultarCuentasChequesMXN(lDatos[0], lDatos[1], lDatos[2]);
                 }
 
@@ -189,7 +189,6 @@ public class Steps_CashManagment extends CucumberBaseTestRunner implements En {
             String[] lDatos = pDatos.split(", ");
 
             switch (pConsulta) {
-
                     case "Cuentas Linea Operativa":{
                         Administrar.consultarCuentasLineaOperativa(lDatos[0], lDatos[1], lDatos[2]);
                         break;
@@ -218,7 +217,7 @@ public class Steps_CashManagment extends CucumberBaseTestRunner implements En {
                     Administrar.consultarCuentasChequesUSDCSV(lDatos[0], lDatos[1], lDatos[2]);
                     break;
                 }
-                case "Cuentas Cheques MXN ":{
+                case "Cuentas Cheques MXN":{
                     Administrar.consultarCuentasChequesMXN(lDatos[0], lDatos[1], lDatos[2]);
                 }
 
@@ -322,7 +321,7 @@ public class Steps_CashManagment extends CucumberBaseTestRunner implements En {
                     Validar.consultarCreditosHipotecariosBD();
                     break;
                 }
-                case "Cuentas Imversion BD":{
+                case "Cuentas Inversion BD":{
                     Validar.consultarCuentasInversionBD();
                     break;
                 }
@@ -334,7 +333,7 @@ public class Steps_CashManagment extends CucumberBaseTestRunner implements En {
                     Validar.consultarCuentasChequesUSDBD();
                     break;
                 }
-                case "Cuentas Cheque MXN BD ":{
+                case "Cuentas Cheque MXN BD":{
                     Validar.consultarCuentasChequeMXNBD();
                     break;
                 }
@@ -346,11 +345,11 @@ public class Steps_CashManagment extends CucumberBaseTestRunner implements En {
                     Validar.consultarCuentasLineaOperativaFM();
                     break;
                 }
-                case "Prestamos Personales FM ":{
+                case "Prestamos Personales FM":{
                     Validar.consultarCuentasPrestamosPersonalesFM();
                     break;
                 }
-                case "Fondos Inverson FM":{
+                case "Fondos Inversion FM":{
                     Validar.consultarCuentasFondosInversonFM();
                     break;
                 }

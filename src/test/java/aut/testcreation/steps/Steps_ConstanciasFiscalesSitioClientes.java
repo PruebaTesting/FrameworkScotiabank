@@ -54,9 +54,8 @@ public class Steps_ConstanciasFiscalesSitioClientes extends CucumberBaseTestRunn
                     break;
             }
         });
-
+        Given("El Usuario se logea en el Page Constancias Fiscales Banco con el idioma {string}", (String Idioma) -> {
+            Login.FuncionUsuario(Idioma);
+        });
     }
-
-
-
 }

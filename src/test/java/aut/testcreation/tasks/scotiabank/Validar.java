@@ -17,7 +17,6 @@ public class Validar extends SeleniumWrapper {
     public static void cambioImagen(){
         estaDesplegado(XXX);
     }
-
     public static boolean mensajeSistema(String pMensaje)throws IOException, InvalidFormatException, AWTException{
         //verificarTexto(XXX, pMensaje);
         reporte.reportarEvento("", true, false);
@@ -39,7 +38,6 @@ public class Validar extends SeleniumWrapper {
     public static void constanciasFiscalesDisponibles() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
     }
-
     public static void comprobante() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
     }
@@ -47,7 +45,6 @@ public class Validar extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
     }
     public static void pantalla() throws IOException, InvalidFormatException, AWTException {
-
         reporte.reportarEvento("", true, false);
     }
 }
