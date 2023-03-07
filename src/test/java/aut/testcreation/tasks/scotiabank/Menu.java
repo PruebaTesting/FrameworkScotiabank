@@ -15,6 +15,7 @@ public class Menu extends SeleniumWrapper {
     public Menu(WebDriver driver) {
         super(driver);
     }
+
     public static void ClavePersonal() throws IOException, InvalidFormatException, AWTException {
         //clickear(XXX); //click btn-Menu
         //seleccionarOpcionPorTexto(XXX, "Cambio de Clave");
@@ -77,7 +78,6 @@ public class Menu extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
     }
-
     public static void CambioPreguntaSecreta() throws IOException, InvalidFormatException, AWTException {
         //escribirEnInput(XXX, pPreguntaSecreta);
         //escribirEnInput(XXX, pRespuesta);
@@ -87,7 +87,6 @@ public class Menu extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
     }
-
     public static void RegistarToken() throws IOException, InvalidFormatException, AWTException {
         //escribirEnInput(XXX, pDatos);
         //escribirEnInput(XXX, pCaptcha);
@@ -118,7 +117,6 @@ public class Menu extends SeleniumWrapper {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
     }
-
     public static void consultaRequerida() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
@@ -167,15 +165,14 @@ public class Menu extends SeleniumWrapper {
     public static void ingresarDatos() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
         reporte.reportarEvento("", true, false);
-
+    }
     public static void guiaDiaria() throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
     }
-    public static void informacionDeMercado() throws IOException, InvalidFormatException, AWTException {
+    public static void informacionDeMercado () throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
     }
-    public static void manualDeOperacion() throws IOException, InvalidFormatException, AWTException {
-
+    public static void manualDeOperacion () throws IOException, InvalidFormatException, AWTException {
         reporte.reportarEvento("", true, false);
     }
 }

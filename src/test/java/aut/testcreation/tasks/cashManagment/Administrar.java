@@ -1,7 +1,13 @@
 package aut.testcreation.tasks.cashManagment;
 
 import framework.engine.selenium.SeleniumWrapper;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
+
+import java.awt.*;
+import java.io.IOException;
+
+import static framework.engine.selenium.ReportFunctionalities.reporte;
 
 public class Administrar extends SeleniumWrapper {
 
@@ -9,23 +15,98 @@ public class Administrar extends SeleniumWrapper {
         super(driver);
     }
 
-    public static void verDetallesUsuario() {
+    public static void verDetallesUsuario() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         System.out.println("Administrar.verDetallesUsuario");
     }
 
-    public static void administrarAprobacion(String pAccion) {
+    public static void administrarAprobacion(String pAccion) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         System.out.println("Administrar.administrarAprobacion");
     }
 
-    public static void editarUsuario(String pCampo) {
+    public static void editarUsuario(String pCampo) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         System.out.println("Administrar.editarUsuario");
     }
 
-    public static void crearUsuarioNoMancomunada(String pPrimerNombre, String pSegundoNombre, String pApellidoPaterno, String pApellidoMaterno, String pCargo, String pArea, String pNumeroCelular, String pVerificarNumeroCelular, String pCorreoElectronico, String pVerificarCorreoElectronico, String pEsAdministrador){
+    public static void crearUsuarioNoMancomunada(String pPrimerNombre, String pSegundoNombre, String pApellidoPaterno, String pApellidoMaterno, String pCargo, String pArea, String pNumeroCelular, String pVerificarNumeroCelular, String pCorreoElectronico, String pVerificarCorreoElectronico, String pEsAdministrador) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         System.out.println("Administrar.crearUsuarioNoMancomunada");
     }
 
-    public static void crearUsuarioMancomunada(String pPrimerNombre, String pSegundoNombre, String pApellidoPaterno, String pApellidoMaterno, String pCargo, String pArea, String pNumeroCelular, String pVerificarNumeroCelular, String pCorreoElectronico, String pVerificarCorreoElectronico, String pEsAdministrador){
+    public static void crearUsuarioMancomunada(String pPrimerNombre, String pSegundoNombre, String pApellidoPaterno, String pApellidoMaterno, String pCargo, String pArea, String pNumeroCelular, String pVerificarNumeroCelular, String pCorreoElectronico, String pVerificarCorreoElectronico, String pEsAdministrador) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
+        reporte.reportarEvento("", true, false);
         System.out.println("Administrar.crearUsuarioMancomunada");
     }
 

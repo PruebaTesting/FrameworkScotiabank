@@ -14,7 +14,8 @@ public class Comprobar extends SeleniumWrapper {
         super(driver);
     }
 
-    public static boolean descargaComprobante() {
+    public static boolean descargaComprobante() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
         System.out.println("Comprobar.descargaComprobante");
         return true;
     }
@@ -25,7 +26,8 @@ public class Comprobar extends SeleniumWrapper {
         return true;
     }
 
-    public static boolean visualizacionDetalles(String pResultadoEsperado) {
+    public static boolean visualizacionDetalles(String pResultadoEsperado) throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
         System.out.println("Comprobar.visualizacionDetalles");
         return true;
     }

@@ -144,7 +144,7 @@ public class Steps_Scotiatrade extends CucumberBaseTestRunner implements En {
         });
         When("El Usuario realiza el cambio de Contrasenia", () -> {
             Datos.cambiarContrasenia();
-
+        });
         When("El Usuario hace la consulta de Guia Diaria", () -> {
             Menu.guiaDiaria();
         });

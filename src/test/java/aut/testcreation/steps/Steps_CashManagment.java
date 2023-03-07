@@ -11,7 +11,7 @@ public class Steps_CashManagment extends CucumberBaseTestRunner implements En {
     public Steps_CashManagment() {
 
         Given("El Usuario se Logea en la página de CCOP con los datos {string}, {string} y {string}", (String pUsuario, String pContrasenia, String pToken) -> {
-            System.out.println(pUsuario + pContrasenia + pToken);
+            //System.out.println("paso realizado");
             Login.correcto(pUsuario, pContrasenia, pToken);
         });
 
@@ -33,11 +33,11 @@ public class Steps_CashManagment extends CucumberBaseTestRunner implements En {
                     CrearBeneficiario.pagoDeServiciosYFacturas(lDatos[0], lDatos[1]);
                     break;
                 }
-                case "Persona Moral Persona Moral de otro banco": {
+                case "Persona Moral de otro banco": {
                     CrearBeneficiario.personaMoralOtroBanco(lDatos[0], lDatos[1], lDatos[2], lDatos[3], lDatos[4], lDatos[5], lDatos[6]);
                     break;
                 }
-                case "Persona Moral Persona Moral de Scotiabank": {
+                case "Persona Moral de Scotiabank": {
                     CrearBeneficiario.personaMoralScotiabank(lDatos[0], lDatos[1], lDatos[2], lDatos[3], lDatos[4]);
                     break;
                 }
