@@ -459,7 +459,7 @@ public class SCR_AUT_002_CashMagment extends SeleniumTestBase {
         }
 
         @AfterEach
-        void afterConsultas() {
+        void afterConsultas() throws IOException, InvalidFormatException, AWTException {
             assertTrue(Comprobar.formatoDescarga());
         }
     }
@@ -597,7 +597,7 @@ public class SCR_AUT_002_CashMagment extends SeleniumTestBase {
         }
 
         @AfterEach
-        void afterConsolidado() {
+        void afterConsolidado() throws IOException, InvalidFormatException, AWTException {
             assertTrue(Comprobar.resultadoEsperado());
         }
     }
@@ -727,11 +727,8 @@ public class SCR_AUT_002_CashMagment extends SeleniumTestBase {
         }
 
         @AfterEach
-        void afterConsultas2() {
+        void afterConsultas2() throws IOException, InvalidFormatException, AWTException {
             assertTrue(Comprobar.formatoDescarga());
         }
-
-
     }
-
 }

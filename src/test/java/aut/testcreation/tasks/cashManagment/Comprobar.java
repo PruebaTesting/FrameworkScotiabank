@@ -32,11 +32,13 @@ public class Comprobar extends SeleniumWrapper {
         return true;
     }
 
-    public static boolean formatoDescarga() {
+    public static boolean formatoDescarga() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
         System.out.println("Comprobar.formatoDescarga");
         return true;
     }
-    public static boolean resultadoEsperado(){
+    public static boolean resultadoEsperado() throws IOException, InvalidFormatException, AWTException {
+        reporte.reportarEvento("", true, false);
         System.out.println("comprobar.resultadoEsperado");
         return true;
     }

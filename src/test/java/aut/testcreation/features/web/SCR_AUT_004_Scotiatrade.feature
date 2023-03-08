@@ -32,7 +32,7 @@ Feature:
 
   Scenario: SC_004_07_CambioDeClaveDeAccesoNoCapturóNumeroDeUsuario
     Given El Usuario ingresa al HomePage de ScotiaTrade
-    When El Usuario hace el Cambio de Clave Personal, sin ingresar Número de Usuario
+    When El Usuario intenta hace el Cambio de Clave Personal, sin ingresar Número de Usuario
     Then El Sistema muestra en pantalla el mensaje : "Datos Incorrectos,volver a  intentar mas tarde"
 
   Scenario: SC_004_08_CambioDeImagen

@@ -154,5 +154,17 @@ public class Steps_Scotiatrade extends CucumberBaseTestRunner implements En {
         When("El Usuario hace la consulta de Manual de Operacion", () -> {
             Menu.manualDeOperacion();
         });
+        When("El Usuario hace el Cambio de Clave Personal, con Clave Nueva Incorrecta", () -> {
+            Menu.ClavePersonalIncorrecta();
+        });
+        Given("El Usuario ingresa al HomePage de ScotiaTrade", () -> {
+            Login.InicioSesion();
+        });
+        When("El Usuario intenta hace el Cambio de Clave Personal, sin ingresar Número de Usuario", () -> {
+            Menu.IntentarCambiarClave();
+        });
+        When("El Usuario hace el Cambio de e-mail, con Token", () -> {
+            Menu.CambioMailConToken();
+        });
     }
 }
